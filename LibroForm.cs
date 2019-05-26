@@ -18,8 +18,33 @@ namespace Proyecto
 			myLibro = new Libro();
 			InitializeComponent();
 		}
+        public LibroForm(string isbn, string edicion, string editorial, string paginas, string nombre, string apellido, string titulo, string año, string cantidad)
+        {
+            myLibro = new Libro();
+        InitializeComponent();
+            tbISBN.Text = isbn;
+            tbEdicion.Text = edicion;
+            tbEditorial.Text = editorial;
+            tbNo_paginas.Text = paginas;
+            tbNombre_autor.Text = nombre;
+            tbApellido.Text = apellido;
+            tbTitulo.Text= titulo;
+            tbAño.Text = año ;
+            tbCantidad.Text=cantidad;
 
-		private void BAgregar_libro_Click(object sender, EventArgs e)
+            tbISBN.Enabled=false;
+            tbEdicion.Enabled = false;
+            tbEditorial.Enabled = false;
+            tbNo_paginas.Enabled = false;
+            tbNombre_autor.Enabled = false;
+            tbApellido.Enabled = false;
+            tbTitulo.Enabled = false;
+            tbAño.Enabled = false;
+            tbCantidad.Enabled = false;
+            BAgregar_libro.Enabled = false;
+        }
+
+        private void BAgregar_libro_Click(object sender, EventArgs e)
 		{
 			myLibro.insertLibro(tbISBN.Text, tbEdicion.Text, tbEditorial.Text, tbNo_paginas.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text, tbCantidad.Text);
 

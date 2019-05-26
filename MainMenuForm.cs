@@ -99,6 +99,7 @@ namespace Proyecto
 
         private void BtnVer_Click(object sender, EventArgs e)
         {
+            string curp, nombre, apellido, correo, colonia, calle, no, isbn, edicion, editorial, paginas, titulo, año,cantidad ;
             if (moduloActual == "USUARIO")
             {
               // DataTable us = us.(textUser.Text, textPassword.Text);
@@ -107,21 +108,44 @@ namespace Proyecto
             }
             else if (moduloActual == "CLIENTE")
             {
-                string curp, nombre, apellido, correo, colonia, calle, no;
-                curp = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-                nombre = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                apellido = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                correo= dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-                colonia= dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-                calle= dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-                no= dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                ClienteForm myFormClie = new ClienteForm(curp, nombre, apellido, correo, colonia, calle, no);
-                myFormClie.ShowDialog();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    curp = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                    nombre = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                    apellido = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                    correo = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                    colonia = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                    calle = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                    no = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                    ClienteForm myFormClie = new ClienteForm(curp, nombre, apellido, correo, colonia, calle, no);
+                    myFormClie.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No existen clientes que mostrar");
+                }
             }
             else if (moduloActual == "LIBRO")
             {
-                LibroForm myFormLib = new LibroForm();
-                myFormLib.ShowDialog();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    isbn = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                    edicion = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                    editorial = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                    paginas = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                    nombre = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                    apellido = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                    titulo = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                    año = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                    cantidad = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                    LibroForm myFormLib = new LibroForm(isbn, edicion, editorial, paginas, nombre, apellido, titulo, año, cantidad);
+                    myFormLib.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No existen libros que mostrar");
+                }
+                
             }
             else if (moduloActual == "REVISTA")
             {
