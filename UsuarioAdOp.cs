@@ -28,7 +28,7 @@ namespace Proyecto
             {
                 a.insertAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
             }
-            if (cbTipo.SelectedIndex == 0)
+            if (cbTipo.SelectedIndex == 1)
             {
                 o.insertOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
             }

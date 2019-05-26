@@ -45,6 +45,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.BSalir = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Encabezado = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbCurp
@@ -228,11 +230,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.Encabezado);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 63);
             this.panel1.TabIndex = 17;
+            // 
+            // Encabezado
+            // 
+            this.Encabezado.AutoSize = true;
+            this.Encabezado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Encabezado.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Encabezado.ForeColor = System.Drawing.Color.Transparent;
+            this.Encabezado.Location = new System.Drawing.Point(137, 9);
+            this.Encabezado.Name = "Encabezado";
+            this.Encabezado.Size = new System.Drawing.Size(303, 39);
+            this.Encabezado.TabIndex = 0;
+            this.Encabezado.Text = "AGREGAR CLIENTE";
+            this.Encabezado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ClienteForm
             // 
@@ -262,6 +278,8 @@
             this.Name = "ClienteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClienteForm";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -286,5 +304,6 @@
 		private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BSalir;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label Encabezado;
     }
 }

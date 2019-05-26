@@ -29,6 +29,8 @@ namespace Proyecto
             string[] opc = new string[] { "Id", "Editorial", "Nombre_autor","Apellido_autor","titulo","Año","Cantidad","Secciones"};
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
+            btnPrestamo.Enabled = false;
+            btnDevolucion.Enabled = false;
             
 			dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
 		}
@@ -37,6 +39,9 @@ namespace Proyecto
 		{
 			label1.Text = "MODULO:USUARIO";
 			moduloActual = "USUARIO";
+            btnPrestamo.Enabled = false;
+            btnDevolucion.Enabled = false;
+
             dataGridView1.DataSource = Conexion.query("SELECT usuario.nombre_usuario,admistrator.nombre FROM usuario INNER JOIN  ON  administrator.codigo_usuario = usuario.codigo;");
         }
 
@@ -48,6 +53,9 @@ namespace Proyecto
             string[] opc = new string[] { "Isbn", "Edicion", "Editorial", "No_paginas", "Nombre_Autor", "Apellido_autor","Titulo","Año", "Cantidad"};
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
+            btnDevolucion.Enabled = true;
+            btnPrestamo.Enabled = true;
+
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM LIBRO");
 		}
@@ -60,6 +68,9 @@ namespace Proyecto
             string[] opc = new string[] { "Id", "Editorial", "No_paginas", "Nombre_Autor", "Apellido_autor", "Titulo", "Año", "Cantidad" };
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
+            btnPrestamo.Enabled = false;
+            btnDevolucion.Enabled = false;
+
             dataGridView1.DataSource = Conexion.query("SELECT * FROM REVISTA");
 		}
 
@@ -71,6 +82,9 @@ namespace Proyecto
             string[] opc = new string[] { "Id", "Editorial", "Nombre_Autor", "Apellido_autor", "Titulo", "Año"};
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
+            btnPrestamo.Enabled = false;
+            btnDevolucion.Enabled = false;
+
             dataGridView1.DataSource = Conexion.query("SELECT * FROM VIDEO");
 		}
         
@@ -122,6 +136,9 @@ namespace Proyecto
             string[] opc = new string[] { "CURP","Nombre", "Apellido", "Correo", "Colonia", "Calle","No_casa" };
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
+            btnPrestamo.Enabled = false;
+            btnDevolucion.Enabled = false;
+
             dataGridView1.DataSource = Conexion.query("SELECT * FROM CLIENTE");
 		}
 

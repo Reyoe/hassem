@@ -18,9 +18,9 @@ namespace Proyecto
 		{
             metodo = "agregar";
 			myCliente = new Cliente();
-
 			InitializeComponent();
-		}
+            Encabezado.Text = "AGREGAR CLIENTE";
+        }
         public ClienteForm(string curp, string nombre, string apellido, string correo, string colonia, string calle, string no, string metodo)
         {
             myCliente = new Cliente();
@@ -30,6 +30,7 @@ namespace Proyecto
             InitializeComponent();
             if (metodo == "mostrar")
             {
+                Encabezado.Text = "MOSTRAR CLIENTE";
                 tbCurp.Text = curp;
                 tbNombre.Text = nombre;
                 tbApellido.Text = apellido;
@@ -53,6 +54,7 @@ namespace Proyecto
 
             if (metodo == "modificar")
             {
+                Encabezado.Text = "MODIFICAR CLIENTE";
                 tbCurp.Text = curp;
                 tbNombre.Text = nombre;
                 tbApellido.Text = apellido;
