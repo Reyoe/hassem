@@ -213,6 +213,16 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_libros_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-libros-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_literatura_filled_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-literatura-filled-30", resourceCulture);

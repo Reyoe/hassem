@@ -46,6 +46,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbCodigo = new System.Windows.Forms.TextBox();
             this.cbOp = new System.Windows.Forms.ComboBox();
+            this.btnEjemplar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.btnEjemplar);
             this.panel1.Controls.Add(this.btnPeriodico);
             this.panel1.Controls.Add(this.btnVideo);
             this.panel1.Controls.Add(this.c);
@@ -63,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 486);
+            this.panel1.Size = new System.Drawing.Size(200, 566);
             this.panel1.TabIndex = 0;
             // 
             // btnPeriodico
@@ -77,7 +79,7 @@
             this.btnPeriodico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPeriodico.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnPeriodico.ForeColor = System.Drawing.Color.White;
-            this.btnPeriodico.Location = new System.Drawing.Point(3, 243);
+            this.btnPeriodico.Location = new System.Drawing.Point(0, 329);
             this.btnPeriodico.Name = "btnPeriodico";
             this.btnPeriodico.Size = new System.Drawing.Size(200, 75);
             this.btnPeriodico.TabIndex = 1;
@@ -97,7 +99,7 @@
             this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVideo.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnVideo.ForeColor = System.Drawing.Color.White;
-            this.btnVideo.Location = new System.Drawing.Point(0, 333);
+            this.btnVideo.Location = new System.Drawing.Point(-3, 410);
             this.btnVideo.Name = "btnVideo";
             this.btnVideo.Size = new System.Drawing.Size(200, 75);
             this.btnVideo.TabIndex = 3;
@@ -179,7 +181,7 @@
             this.btnRevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRevista.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnRevista.ForeColor = System.Drawing.Color.White;
-            this.btnRevista.Location = new System.Drawing.Point(0, 408);
+            this.btnRevista.Location = new System.Drawing.Point(0, 491);
             this.btnRevista.Name = "btnRevista";
             this.btnRevista.Size = new System.Drawing.Size(200, 75);
             this.btnRevista.TabIndex = 2;
@@ -341,6 +343,25 @@
             this.cbOp.Size = new System.Drawing.Size(121, 25);
             this.cbOp.TabIndex = 4;
             // 
+            // btnEjemplar
+            // 
+            this.btnEjemplar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEjemplar.BackgroundImage = global::Proyecto.Properties.Resources.icons8_libros_30;
+            this.btnEjemplar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEjemplar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEjemplar.FlatAppearance.BorderSize = 0;
+            this.btnEjemplar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnEjemplar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEjemplar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjemplar.ForeColor = System.Drawing.Color.White;
+            this.btnEjemplar.Location = new System.Drawing.Point(0, 243);
+            this.btnEjemplar.Name = "btnEjemplar";
+            this.btnEjemplar.Size = new System.Drawing.Size(200, 75);
+            this.btnEjemplar.TabIndex = 5;
+            this.btnEjemplar.Text = "Ejemplar";
+            this.btnEjemplar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEjemplar.UseVisualStyleBackColor = false;
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -348,7 +369,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = global::Proyecto.Properties.Resources.índice;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(848, 486);
+            this.ClientSize = new System.Drawing.Size(848, 566);
             this.Controls.Add(this.cbOp);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.dataGridView1);
@@ -386,5 +407,6 @@
 		private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.ComboBox cbOp;
+        private System.Windows.Forms.Button btnEjemplar;
     }
 }
