@@ -33,18 +33,19 @@
             this.btnVideo = new System.Windows.Forms.Button();
             this.c = new System.Windows.Forms.Button();
             this.btnLibro = new System.Windows.Forms.Button();
+            this.btnUsuario = new System.Windows.Forms.Button();
             this.btnRevista = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDevolucion = new System.Windows.Forms.Button();
             this.btnPrestamo = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnVer = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbCodigo = new System.Windows.Forms.TextBox();
-            this.btnUsuario = new System.Windows.Forms.Button();
+            this.cbOp = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -141,6 +142,27 @@
             this.btnLibro.UseVisualStyleBackColor = false;
             this.btnLibro.Click += new System.EventHandler(this.BtnLibro_Click);
             // 
+            // btnUsuario
+            // 
+            this.btnUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.btnUsuario.BackgroundImage = global::Proyecto.Properties.Resources.icons8_trabajo_permanente_35_1_;
+            this.btnUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnUsuario.FlatAppearance.BorderSize = 0;
+            this.btnUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnUsuario.ForeColor = System.Drawing.Color.White;
+            this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnUsuario.Location = new System.Drawing.Point(0, 3);
+            this.btnUsuario.Name = "btnUsuario";
+            this.btnUsuario.Size = new System.Drawing.Size(200, 75);
+            this.btnUsuario.TabIndex = 5;
+            this.btnUsuario.Text = "Usuario";
+            this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnUsuario.UseVisualStyleBackColor = false;
+            this.btnUsuario.Click += new System.EventHandler(this.BtnUsuario_Click);
+            // 
             // btnRevista
             // 
             this.btnRevista.BackColor = System.Drawing.Color.Transparent;
@@ -230,6 +252,21 @@
             this.btnModificar.UseVisualStyleBackColor = false;
             this.btnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.btnAgregar.ForeColor = System.Drawing.Color.White;
+            this.btnAgregar.Location = new System.Drawing.Point(0, 55);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(108, 53);
+            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
+            // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
@@ -237,7 +274,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(228, 54);
+            this.btnEliminar.Location = new System.Drawing.Point(228, 55);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(108, 53);
             this.btnEliminar.TabIndex = 8;
@@ -260,57 +297,34 @@
             this.btnVer.UseVisualStyleBackColor = false;
             this.btnVer.Click += new System.EventHandler(this.BtnVer_Click);
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
-            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.btnAgregar.ForeColor = System.Drawing.Color.White;
-            this.btnAgregar.Location = new System.Drawing.Point(0, 55);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(108, 53);
-            this.btnAgregar.TabIndex = 6;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(277, 187);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(520, 230);
             this.dataGridView1.TabIndex = 2;
             // 
             // tbCodigo
             // 
-            this.tbCodigo.Location = new System.Drawing.Point(657, 130);
+            this.tbCodigo.Location = new System.Drawing.Point(482, 136);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(100, 20);
+            this.tbCodigo.Size = new System.Drawing.Size(129, 20);
             this.tbCodigo.TabIndex = 3;
             // 
-            // btnUsuario
+            // cbOp
             // 
-            this.btnUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.btnUsuario.BackgroundImage = global::Proyecto.Properties.Resources.icons8_trabajo_permanente_35_1_;
-            this.btnUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnUsuario.FlatAppearance.BorderSize = 0;
-            this.btnUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.btnUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUsuario.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.btnUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnUsuario.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnUsuario.Location = new System.Drawing.Point(0, 3);
-            this.btnUsuario.Name = "btnUsuario";
-            this.btnUsuario.Size = new System.Drawing.Size(200, 75);
-            this.btnUsuario.TabIndex = 5;
-            this.btnUsuario.Text = "Usuario";
-            this.btnUsuario.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnUsuario.UseVisualStyleBackColor = false;
-            this.btnUsuario.Click += new System.EventHandler(this.BtnUsuario_Click);
+            this.cbOp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOp.FormattingEnabled = true;
+            this.cbOp.Location = new System.Drawing.Point(355, 136);
+            this.cbOp.Name = "cbOp";
+            this.cbOp.Size = new System.Drawing.Size(121, 21);
+            this.cbOp.TabIndex = 4;
             // 
             // MainMenuForm
             // 
@@ -320,6 +334,7 @@
             this.BackgroundImage = global::Proyecto.Properties.Resources.índice;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(848, 486);
+            this.Controls.Add(this.cbOp);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
@@ -355,5 +370,6 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbCodigo;
+        private System.Windows.Forms.ComboBox cbOp;
     }
 }

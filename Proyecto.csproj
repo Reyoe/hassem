@@ -68,6 +68,7 @@
     <Compile Include="LibroForm.Designer.cs">
       <DependentUpon>LibroForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Operador.cs" />
     <Compile Include="Periodico.cs" />
     <Compile Include="PeriodicoForm.cs">
       <SubType>Form</SubType>

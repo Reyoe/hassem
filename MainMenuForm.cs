@@ -24,6 +24,7 @@ namespace Proyecto
 		{
 			label1.Text = "MODULO:PERIODICO";
 			moduloActual = "PERIODICO";
+            
 			dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
 		}
 
@@ -140,13 +141,34 @@ namespace Proyecto
             else if (moduloActual == "CLIENTE")
             {
                 Cliente d= new Cliente();
-                d.deleteCliente(tbCodigo.Text);
+                if (dataGridView1.SelectedRows.Count> 0)
+                {
+                   d.deleteCliente(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    MessageBox.Show("Cliente eliminado con exito");
+                
+                }
+                else
+                {
+                   MessageBox.Show("No exixten clientes");
+                
+                }
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM cliente");
             }
             else if (moduloActual == "LIBRO")
             {
                 Libro d = new Libro();
-                d.deleteLibro(tbCodigo.Text);
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    d.deleteLibro(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    MessageBox.Show("Cliente eliminado con exito");
+
+                }
+                else
+                {
+                    MessageBox.Show("No exixten clientes");
+
+                }
+                dataGridView1.DataSource = Conexion.query("SELECT * FROM cliente");
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM libro");
             }
             else if (moduloActual == "REVISTA")
@@ -206,6 +228,6 @@ namespace Proyecto
             }
         }
 
-
+ 
     }
 }
