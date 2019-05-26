@@ -44,162 +44,194 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.BSalir = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbCurp
             // 
-            this.tbCurp.Location = new System.Drawing.Point(261, 116);
+            this.tbCurp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCurp.Location = new System.Drawing.Point(120, 173);
             this.tbCurp.Name = "tbCurp";
-            this.tbCurp.Size = new System.Drawing.Size(100, 20);
+            this.tbCurp.Size = new System.Drawing.Size(157, 23);
             this.tbCurp.TabIndex = 0;
+            this.tbCurp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbApellido
             // 
-            this.tbApellido.Location = new System.Drawing.Point(261, 168);
+            this.tbApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbApellido.Location = new System.Drawing.Point(120, 234);
             this.tbApellido.Name = "tbApellido";
-            this.tbApellido.Size = new System.Drawing.Size(100, 20);
+            this.tbApellido.Size = new System.Drawing.Size(157, 23);
             this.tbApellido.TabIndex = 1;
+            this.tbApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCorreo
             // 
-            this.tbCorreo.Location = new System.Drawing.Point(261, 196);
+            this.tbCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbCorreo.Location = new System.Drawing.Point(120, 263);
             this.tbCorreo.Name = "tbCorreo";
-            this.tbCorreo.Size = new System.Drawing.Size(100, 20);
+            this.tbCorreo.Size = new System.Drawing.Size(157, 23);
             this.tbCorreo.TabIndex = 2;
+            this.tbCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbColonia
             // 
-            this.tbColonia.Location = new System.Drawing.Point(261, 250);
+            this.tbColonia.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbColonia.Location = new System.Drawing.Point(408, 232);
             this.tbColonia.Name = "tbColonia";
-            this.tbColonia.Size = new System.Drawing.Size(100, 20);
+            this.tbColonia.Size = new System.Drawing.Size(120, 23);
             this.tbColonia.TabIndex = 3;
+            this.tbColonia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCalle
             // 
-            this.tbCalle.Location = new System.Drawing.Point(261, 225);
+            this.tbCalle.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbCalle.Location = new System.Drawing.Point(408, 202);
             this.tbCalle.Name = "tbCalle";
-            this.tbCalle.Size = new System.Drawing.Size(100, 20);
+            this.tbCalle.Size = new System.Drawing.Size(120, 23);
             this.tbCalle.TabIndex = 4;
+            this.tbCalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNo
             // 
-            this.tbNo.Location = new System.Drawing.Point(261, 280);
+            this.tbNo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbNo.Location = new System.Drawing.Point(408, 173);
             this.tbNo.Name = "tbNo";
-            this.tbNo.Size = new System.Drawing.Size(100, 20);
+            this.tbNo.Size = new System.Drawing.Size(120, 23);
             this.tbNo.TabIndex = 5;
             // 
             // tbNombre
             // 
-            this.tbNombre.Location = new System.Drawing.Point(261, 142);
+            this.tbNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbNombre.Location = new System.Drawing.Point(120, 202);
             this.tbNombre.Name = "tbNombre";
-            this.tbNombre.Size = new System.Drawing.Size(100, 20);
+            this.tbNombre.Size = new System.Drawing.Size(157, 23);
             this.tbNombre.TabIndex = 6;
+            this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(207, 116);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(44, 175);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 7;
             this.label1.Text = "CURP";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(200, 145);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(44, 207);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(70, 21);
             this.label2.TabIndex = 8;
             this.label2.Text = "Nombre";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(200, 171);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(44, 239);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(73, 21);
             this.label3.TabIndex = 9;
             this.label3.Text = "Apellido";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(200, 196);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(44, 268);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 13);
+            this.label4.Size = new System.Drawing.Size(59, 21);
             this.label4.TabIndex = 10;
             this.label4.Text = "Correo";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(200, 257);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(321, 234);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 13);
+            this.label5.Size = new System.Drawing.Size(67, 21);
             this.label5.TabIndex = 11;
             this.label5.Text = "Colonia";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(200, 287);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(321, 173);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.Size = new System.Drawing.Size(72, 21);
             this.label6.TabIndex = 12;
             this.label6.Text = "No.Casa";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(200, 228);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(321, 205);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(30, 13);
+            this.label7.Size = new System.Drawing.Size(48, 21);
             this.label7.TabIndex = 13;
             this.label7.Text = "Calle";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(155, 373);
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::Proyecto.Properties.Resources.icons8_añadir_usuario_masculino_20;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(161, 310);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(116, 49);
             this.button1.TabIndex = 14;
             this.button1.Text = "AGREGAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // BSalir
             // 
-            this.BSalir.Location = new System.Drawing.Point(325, 373);
+            this.BSalir.BackColor = System.Drawing.Color.Maroon;
+            this.BSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.BSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BSalir.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.BSalir.ForeColor = System.Drawing.Color.White;
+            this.BSalir.Image = global::Proyecto.Properties.Resources.icons8_eliminar_filled_20;
+            this.BSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BSalir.Location = new System.Drawing.Point(315, 310);
             this.BSalir.Name = "BSalir";
-            this.BSalir.Size = new System.Drawing.Size(75, 23);
+            this.BSalir.Size = new System.Drawing.Size(116, 49);
             this.BSalir.TabIndex = 15;
-            this.BSalir.Text = "Salir";
-            this.BSalir.UseVisualStyleBackColor = true;
+            this.BSalir.Text = "SALIR";
+            this.BSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::Proyecto.Properties.Resources.icons8_agregar_usuario_masculino_100;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(569, 63);
+            this.panel1.Size = new System.Drawing.Size(584, 63);
             this.panel1.TabIndex = 17;
             // 
             // ClienteForm
@@ -208,7 +240,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondo_portada_area_cliente;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(569, 473);
+            this.ClientSize = new System.Drawing.Size(584, 397);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.button1);
@@ -226,10 +258,10 @@
             this.Controls.Add(this.tbCorreo);
             this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.tbCurp);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ClienteForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClienteForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,7 +285,6 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BSalir;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
     }
 }

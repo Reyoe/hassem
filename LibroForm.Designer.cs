@@ -53,9 +53,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(38, 54);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(118, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(48, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "ISBN";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
@@ -63,19 +66,25 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(281, 54);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(118, 303);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.Size = new System.Drawing.Size(67, 21);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Edicion";
+            this.label2.Text = "Edición";
             this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 124);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(118, 237);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(75, 21);
             this.label3.TabIndex = 2;
             this.label3.Text = "Editorial";
             this.label3.Click += new System.EventHandler(this.Label3_Click);
@@ -83,19 +92,25 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(259, 124);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label4.Location = new System.Drawing.Point(374, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 13);
+            this.label4.Size = new System.Drawing.Size(100, 21);
             this.label4.TabIndex = 3;
-            this.label4.Text = "No_paginas";
+            this.label4.Text = "No_Páginas";
             this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(535, 54);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(374, 110);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 13);
+            this.label5.Size = new System.Drawing.Size(120, 21);
             this.label5.TabIndex = 4;
             this.label5.Text = "Nombre_Autor";
             this.label5.Click += new System.EventHandler(this.Label5_Click);
@@ -103,9 +118,12 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(535, 124);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label6.Location = new System.Drawing.Point(374, 177);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(75, 13);
+            this.label6.Size = new System.Drawing.Size(123, 21);
             this.label6.TabIndex = 5;
             this.label6.Text = "Apellido_Autor";
             this.label6.Click += new System.EventHandler(this.Label6_Click);
@@ -113,9 +131,12 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(271, 189);
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label7.Location = new System.Drawing.Point(118, 177);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(33, 13);
+            this.label7.Size = new System.Drawing.Size(54, 21);
             this.label7.TabIndex = 6;
             this.label7.Text = "Titulo";
             this.label7.Click += new System.EventHandler(this.Label7_Click);
@@ -123,9 +144,12 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(555, 189);
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label8.Location = new System.Drawing.Point(118, 365);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 13);
+            this.label8.Size = new System.Drawing.Size(39, 21);
             this.label8.TabIndex = 7;
             this.label8.Text = "Año";
             this.label8.Click += new System.EventHandler(this.Label8_Click);
@@ -133,110 +157,150 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(26, 189);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label9.Location = new System.Drawing.Point(374, 303);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 13);
+            this.label9.Size = new System.Drawing.Size(79, 21);
             this.label9.TabIndex = 8;
             this.label9.Text = "Cantidad";
             this.label9.Click += new System.EventHandler(this.Label9_Click);
             // 
             // tbNombre_autor
             // 
-            this.tbNombre_autor.Location = new System.Drawing.Point(630, 54);
+            this.tbNombre_autor.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbNombre_autor.Location = new System.Drawing.Point(378, 134);
             this.tbNombre_autor.Name = "tbNombre_autor";
-            this.tbNombre_autor.Size = new System.Drawing.Size(100, 20);
+            this.tbNombre_autor.Size = new System.Drawing.Size(157, 23);
             this.tbNombre_autor.TabIndex = 9;
+            this.tbNombre_autor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbNombre_autor.TextChanged += new System.EventHandler(this.TbNombre_autor_TextChanged);
             // 
             // tbTitulo
             // 
-            this.tbTitulo.Location = new System.Drawing.Point(358, 199);
+            this.tbTitulo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbTitulo.Location = new System.Drawing.Point(122, 201);
             this.tbTitulo.Name = "tbTitulo";
-            this.tbTitulo.Size = new System.Drawing.Size(100, 20);
+            this.tbTitulo.Size = new System.Drawing.Size(157, 23);
             this.tbTitulo.TabIndex = 10;
+            this.tbTitulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbTitulo.TextChanged += new System.EventHandler(this.TbTitulo_TextChanged);
             // 
             // tbNo_paginas
             // 
-            this.tbNo_paginas.Location = new System.Drawing.Point(358, 121);
+            this.tbNo_paginas.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbNo_paginas.Location = new System.Drawing.Point(380, 261);
             this.tbNo_paginas.Name = "tbNo_paginas";
-            this.tbNo_paginas.Size = new System.Drawing.Size(100, 20);
+            this.tbNo_paginas.Size = new System.Drawing.Size(157, 23);
             this.tbNo_paginas.TabIndex = 11;
+            this.tbNo_paginas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbNo_paginas.TextChanged += new System.EventHandler(this.TbNo_paginas_TextChanged);
             // 
             // tbCantidad
             // 
-            this.tbCantidad.Location = new System.Drawing.Point(113, 199);
+            this.tbCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbCantidad.Location = new System.Drawing.Point(378, 327);
             this.tbCantidad.Name = "tbCantidad";
-            this.tbCantidad.Size = new System.Drawing.Size(100, 20);
+            this.tbCantidad.Size = new System.Drawing.Size(157, 23);
             this.tbCantidad.TabIndex = 12;
+            this.tbCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbCantidad.TextChanged += new System.EventHandler(this.TbCantidad_TextChanged);
             // 
             // tbEditorial
             // 
-            this.tbEditorial.Location = new System.Drawing.Point(113, 121);
+            this.tbEditorial.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbEditorial.Location = new System.Drawing.Point(122, 261);
             this.tbEditorial.Name = "tbEditorial";
-            this.tbEditorial.Size = new System.Drawing.Size(100, 20);
+            this.tbEditorial.Size = new System.Drawing.Size(157, 23);
             this.tbEditorial.TabIndex = 13;
+            this.tbEditorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbEditorial.TextChanged += new System.EventHandler(this.TbEditorial_TextChanged);
             // 
             // tbEdicion
             // 
-            this.tbEdicion.Location = new System.Drawing.Point(358, 54);
+            this.tbEdicion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbEdicion.Location = new System.Drawing.Point(122, 327);
             this.tbEdicion.Name = "tbEdicion";
-            this.tbEdicion.Size = new System.Drawing.Size(100, 20);
+            this.tbEdicion.Size = new System.Drawing.Size(157, 23);
             this.tbEdicion.TabIndex = 14;
+            this.tbEdicion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbEdicion.TextChanged += new System.EventHandler(this.TbEdicion_TextChanged);
             // 
             // tbISBN
             // 
-            this.tbISBN.Location = new System.Drawing.Point(113, 47);
+            this.tbISBN.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbISBN.Location = new System.Drawing.Point(122, 137);
             this.tbISBN.Name = "tbISBN";
-            this.tbISBN.Size = new System.Drawing.Size(100, 20);
+            this.tbISBN.Size = new System.Drawing.Size(157, 23);
             this.tbISBN.TabIndex = 15;
+            this.tbISBN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbISBN.TextChanged += new System.EventHandler(this.TbISBN_TextChanged);
             // 
             // tbAño
             // 
-            this.tbAño.Location = new System.Drawing.Point(630, 189);
+            this.tbAño.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbAño.Location = new System.Drawing.Point(122, 389);
             this.tbAño.Name = "tbAño";
-            this.tbAño.Size = new System.Drawing.Size(100, 20);
+            this.tbAño.Size = new System.Drawing.Size(157, 23);
             this.tbAño.TabIndex = 16;
+            this.tbAño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbAño.TextChanged += new System.EventHandler(this.TbAño_TextChanged);
             // 
             // tbApellido
             // 
-            this.tbApellido.Location = new System.Drawing.Point(630, 117);
+            this.tbApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbApellido.Location = new System.Drawing.Point(378, 201);
             this.tbApellido.Name = "tbApellido";
-            this.tbApellido.Size = new System.Drawing.Size(100, 20);
+            this.tbApellido.Size = new System.Drawing.Size(157, 23);
             this.tbApellido.TabIndex = 17;
+            this.tbApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbApellido.TextChanged += new System.EventHandler(this.TbApellido_TextChanged);
             // 
             // BAgregar_libro
             // 
-            this.BAgregar_libro.Location = new System.Drawing.Point(210, 304);
+            this.BAgregar_libro.BackColor = System.Drawing.Color.YellowGreen;
+            this.BAgregar_libro.BackgroundImage = global::Proyecto.Properties.Resources.green2;
+            this.BAgregar_libro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BAgregar_libro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BAgregar_libro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.BAgregar_libro.ForeColor = System.Drawing.Color.White;
+            this.BAgregar_libro.Image = global::Proyecto.Properties.Resources.icons8_añadir_libro_20;
+            this.BAgregar_libro.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BAgregar_libro.Location = new System.Drawing.Point(381, 363);
             this.BAgregar_libro.Name = "BAgregar_libro";
-            this.BAgregar_libro.Size = new System.Drawing.Size(75, 23);
+            this.BAgregar_libro.Size = new System.Drawing.Size(116, 49);
             this.BAgregar_libro.TabIndex = 18;
             this.BAgregar_libro.Text = "AGREGAR";
-            this.BAgregar_libro.UseVisualStyleBackColor = true;
+            this.BAgregar_libro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BAgregar_libro.UseVisualStyleBackColor = false;
             this.BAgregar_libro.Click += new System.EventHandler(this.BAgregar_libro_Click);
             // 
             // BSalir
             // 
-            this.BSalir.Location = new System.Drawing.Point(506, 304);
+            this.BSalir.BackColor = System.Drawing.Color.Maroon;
+            this.BSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BSalir.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.BSalir.ForeColor = System.Drawing.Color.White;
+            this.BSalir.Image = global::Proyecto.Properties.Resources.icons8_eliminar_filled_20;
+            this.BSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.BSalir.Location = new System.Drawing.Point(527, 363);
             this.BSalir.Name = "BSalir";
-            this.BSalir.Size = new System.Drawing.Size(75, 23);
+            this.BSalir.Size = new System.Drawing.Size(116, 49);
             this.BSalir.TabIndex = 19;
             this.BSalir.Text = "SALIR";
-            this.BSalir.UseVisualStyleBackColor = true;
+            this.BSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
             // 
             // LibroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Proyecto.Properties.Resources._394862;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(668, 451);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.BAgregar_libro);
             this.Controls.Add(this.tbApellido);
@@ -257,7 +321,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "LibroForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LibroForm";
             this.ResumeLayout(false);
             this.PerformLayout();

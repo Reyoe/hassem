@@ -77,8 +77,7 @@ namespace Proyecto
 			}
 			else
 			{
-				MessageBox.Show("No existe el usuario");
-
+				MessageBox.Show("No Existe el Usuario","ERROR",MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
 
 			//usuario.GetUsuario(textUser.Text, textPassword.Text).Rows[0][0].ToString();

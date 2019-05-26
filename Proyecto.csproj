@@ -216,5 +216,32 @@
   <ItemGroup>
     <None Include="Resources\icons8-agregar-usuario-masculino-100.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\240_F_110821411_fBvNrrY6ITg43X51TuRFv4keqJJb6VSb.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-usuario-masculino-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-usuario-masculino-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-eliminar-filled-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\394862.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-libro-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\689175.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green2.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
