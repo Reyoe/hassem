@@ -453,6 +453,9 @@ namespace Proyecto
             }
         }
 
- 
+        private void TbCodigo_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

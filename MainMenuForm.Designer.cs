@@ -329,6 +329,7 @@
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(129, 24);
             this.tbCodigo.TabIndex = 3;
+            this.tbCodigo.TextChanged += new System.EventHandler(this.TbCodigo_TextChanged);
             // 
             // cbOp
             // 
