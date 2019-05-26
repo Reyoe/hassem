@@ -19,11 +19,16 @@ namespace Proyecto
 		{
 			InitializeComponent();
 		}
-
-		private void BtnPeriodico_Click(object sender, EventArgs e)
+        
+        
+        private void BtnPeriodico_Click(object sender, EventArgs e)
 		{
 			label1.Text = "MODULO:PERIODICO";
 			moduloActual = "PERIODICO";
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "Id", "Editorial", "Nombre_autor","Apellido_autor","titulo","Año","Cantidad","Secciones"};
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
             
 			dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
 		}
@@ -32,28 +37,41 @@ namespace Proyecto
 		{
 			label1.Text = "MODULO:USUARIO";
 			moduloActual = "USUARIO";
-            //dataGridView1.DataSource = Conexion.query("SELECT usuario.nombre_usuario,admistrator.nombre FROM usuario INNER JOIN  ON usuario.codigo = administrator.codigo_usuario;");
+            dataGridView1.DataSource = Conexion.query("SELECT usuario.nombre_usuario,admistrator.nombre FROM usuario INNER JOIN  ON  administrator.codigo_usuario = usuario.codigo;");
         }
 
 		private void BtnLibro_Click(object sender, EventArgs e)
 		{
 			label1.Text = "MODULO:LIBRO";
 			moduloActual = "LIBRO";
-			dataGridView1.DataSource = Conexion.query("SELECT * FROM LIBRO");
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "Isbn", "Edicion", "Editorial", "No_paginas", "Nombre_Autor", "Apellido_autor","Titulo","Año", "Cantidad"};
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
+
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM LIBRO");
 		}
 
 		private void BtnRevista_Click(object sender, EventArgs e)
 		{
 			label1.Text = "MODULO:REVISTA";
 			moduloActual = "REVISTA";
-			dataGridView1.DataSource = Conexion.query("SELECT * FROM REVISTA");
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "Id", "Editorial", "No_paginas", "Nombre_Autor", "Apellido_autor", "Titulo", "Año", "Cantidad" };
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM REVISTA");
 		}
 
 		private void BtnVideo_Click(object sender, EventArgs e)
 		{
 			label1.Text = "MODULO:VIDEO";
 			moduloActual = "VIDEO";
-			dataGridView1.DataSource = Conexion.query("SELECT * FROM VIDEO");
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "Id", "Editorial", "Nombre_Autor", "Apellido_autor", "Titulo", "Año"};
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM VIDEO");
 		}
         
 		private void BtnAgregar_Click(object sender, EventArgs e)
@@ -100,7 +118,11 @@ namespace Proyecto
 		{
 			label1.Text = "MODULO:CLIENTE";
 			moduloActual = "CLIENTE";
-			dataGridView1.DataSource = Conexion.query("SELECT * FROM CLIENTE");
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "CURP","Nombre", "Apellido", "Correo", "Colonia", "Calle","No_casa" };
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM CLIENTE");
 		}
 
         private void BtnVer_Click(object sender, EventArgs e)
