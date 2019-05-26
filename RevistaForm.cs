@@ -22,6 +22,24 @@ namespace Proyecto
         {
             myRevista = new Revista();
             InitializeComponent();
+
+            tbEditorial.Text = editorial;
+            tbNo_paginas.Text = paginas;
+            tbNombre_autor.Text = nombre;
+            tbApellido.Text = apellido;
+            tbTitulo.Text = titulo;
+            tbAño.Text = año;
+            tbCantidad.Text = cantidad;
+
+            tbEditorial.Enabled = false;
+            tbNo_paginas.Enabled = false;
+            tbNombre_autor.Enabled = false;
+            tbApellido.Enabled = false;
+            tbTitulo.Enabled = false;
+            tbAño.Enabled = false;
+            tbCantidad.Enabled = false;
+            BAgregar_Revista.Enabled = false;
+
         }
         private void BAgregar_Revista_Click(object sender, EventArgs e)
 		{

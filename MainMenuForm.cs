@@ -164,13 +164,27 @@ namespace Proyecto
                 }
                 else
                 {
-                    MessageBox.Show("No existen libros que mostrar");
+                    MessageBox.Show("No existen revistas que mostrar");
                 }
             }
             else if (moduloActual == "VIDEO")
             {
-                VideoForm myFormVid = new VideoForm();
-                myFormVid.ShowDialog();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                    editorial = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                    nombre = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                    apellido = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                    titulo = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                    año = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                    VideoForm myFormVid = new VideoForm(editorial, nombre, apellido, titulo, año);
+                    myFormVid.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No hay videos que mostrar");
+                }
+                
             }
             else if (moduloActual == "PERIODICO")
             {

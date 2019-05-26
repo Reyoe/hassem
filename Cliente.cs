@@ -29,5 +29,11 @@ namespace Proyecto
             Conexion.query(query);
             return Conexion.query(query); ;
         }
+        public void updateCliente(string code)
+        {
+            string query = "DELETE FROM cliente WHERE curp='" + code + "';";
+            Console.WriteLine(query);
+            Conexion.query(query); ;
+        }
     }
 }
