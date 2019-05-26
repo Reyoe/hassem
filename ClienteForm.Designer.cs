@@ -52,7 +52,7 @@
             // tbCurp
             // 
             this.tbCurp.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCurp.Location = new System.Drawing.Point(120, 173);
+            this.tbCurp.Location = new System.Drawing.Point(102, 128);
             this.tbCurp.Name = "tbCurp";
             this.tbCurp.Size = new System.Drawing.Size(157, 23);
             this.tbCurp.TabIndex = 0;
@@ -61,7 +61,7 @@
             // tbApellido
             // 
             this.tbApellido.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbApellido.Location = new System.Drawing.Point(120, 234);
+            this.tbApellido.Location = new System.Drawing.Point(102, 229);
             this.tbApellido.Name = "tbApellido";
             this.tbApellido.Size = new System.Drawing.Size(157, 23);
             this.tbApellido.TabIndex = 1;
@@ -70,7 +70,7 @@
             // tbCorreo
             // 
             this.tbCorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbCorreo.Location = new System.Drawing.Point(120, 263);
+            this.tbCorreo.Location = new System.Drawing.Point(105, 279);
             this.tbCorreo.Name = "tbCorreo";
             this.tbCorreo.Size = new System.Drawing.Size(157, 23);
             this.tbCorreo.TabIndex = 2;
@@ -79,33 +79,34 @@
             // tbColonia
             // 
             this.tbColonia.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbColonia.Location = new System.Drawing.Point(408, 232);
+            this.tbColonia.Location = new System.Drawing.Point(325, 229);
             this.tbColonia.Name = "tbColonia";
-            this.tbColonia.Size = new System.Drawing.Size(120, 23);
+            this.tbColonia.Size = new System.Drawing.Size(157, 23);
             this.tbColonia.TabIndex = 3;
             this.tbColonia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCalle
             // 
             this.tbCalle.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbCalle.Location = new System.Drawing.Point(408, 202);
+            this.tbCalle.Location = new System.Drawing.Point(325, 178);
             this.tbCalle.Name = "tbCalle";
-            this.tbCalle.Size = new System.Drawing.Size(120, 23);
+            this.tbCalle.Size = new System.Drawing.Size(157, 23);
             this.tbCalle.TabIndex = 4;
             this.tbCalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNo
             // 
             this.tbNo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbNo.Location = new System.Drawing.Point(408, 173);
+            this.tbNo.Location = new System.Drawing.Point(325, 128);
             this.tbNo.Name = "tbNo";
-            this.tbNo.Size = new System.Drawing.Size(120, 23);
+            this.tbNo.Size = new System.Drawing.Size(157, 23);
             this.tbNo.TabIndex = 5;
+            this.tbNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNombre
             // 
             this.tbNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbNombre.Location = new System.Drawing.Point(120, 202);
+            this.tbNombre.Location = new System.Drawing.Point(102, 178);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(157, 23);
             this.tbNombre.TabIndex = 6;
@@ -116,7 +117,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(44, 175);
+            this.label1.Location = new System.Drawing.Point(101, 104);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 21);
             this.label1.TabIndex = 7;
@@ -127,7 +128,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(44, 207);
+            this.label2.Location = new System.Drawing.Point(101, 154);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 21);
             this.label2.TabIndex = 8;
@@ -138,7 +139,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(44, 239);
+            this.label3.Location = new System.Drawing.Point(98, 205);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 21);
             this.label3.TabIndex = 9;
@@ -149,7 +150,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(44, 268);
+            this.label4.Location = new System.Drawing.Point(101, 255);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 21);
             this.label4.TabIndex = 10;
@@ -160,7 +161,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(321, 234);
+            this.label5.Location = new System.Drawing.Point(321, 205);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(67, 21);
             this.label5.TabIndex = 11;
@@ -171,7 +172,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(321, 173);
+            this.label6.Location = new System.Drawing.Point(321, 104);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 21);
             this.label6.TabIndex = 12;
@@ -182,7 +183,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(321, 205);
+            this.label7.Location = new System.Drawing.Point(321, 154);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 21);
             this.label7.TabIndex = 13;
@@ -199,7 +200,7 @@
             this.button1.ForeColor = System.Drawing.Color.Transparent;
             this.button1.Image = global::Proyecto.Properties.Resources.icons8_añadir_usuario_masculino_20;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(161, 310);
+            this.button1.Location = new System.Drawing.Point(102, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 49);
             this.button1.TabIndex = 14;
@@ -218,7 +219,7 @@
             this.BSalir.ForeColor = System.Drawing.Color.White;
             this.BSalir.Image = global::Proyecto.Properties.Resources.icons8_eliminar_filled_20;
             this.BSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BSalir.Location = new System.Drawing.Point(315, 310);
+            this.BSalir.Location = new System.Drawing.Point(366, 323);
             this.BSalir.Name = "BSalir";
             this.BSalir.Size = new System.Drawing.Size(116, 49);
             this.BSalir.TabIndex = 15;
@@ -234,7 +235,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(584, 63);
+            this.panel1.Size = new System.Drawing.Size(581, 63);
             this.panel1.TabIndex = 17;
             // 
             // Encabezado
@@ -256,7 +257,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondo_portada_area_cliente;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(584, 397);
+            this.ClientSize = new System.Drawing.Size(581, 403);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.button1);
