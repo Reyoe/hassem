@@ -71,6 +71,7 @@
             this.btnPeriodico.BackColor = System.Drawing.Color.Transparent;
             this.btnPeriodico.BackgroundImage = global::Proyecto.Properties.Resources.icons8_noticias_filled_30;
             this.btnPeriodico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnPeriodico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPeriodico.FlatAppearance.BorderSize = 0;
             this.btnPeriodico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnPeriodico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -90,6 +91,7 @@
             this.btnVideo.BackColor = System.Drawing.Color.Transparent;
             this.btnVideo.BackgroundImage = global::Proyecto.Properties.Resources.icons8_programa_de_televisión_filled_30;
             this.btnVideo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnVideo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVideo.FlatAppearance.BorderSize = 0;
             this.btnVideo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnVideo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -109,6 +111,7 @@
             this.c.BackColor = System.Drawing.Color.Transparent;
             this.c.BackgroundImage = global::Proyecto.Properties.Resources.icons8_contactos_35;
             this.c.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.c.Cursor = System.Windows.Forms.Cursors.Hand;
             this.c.FlatAppearance.BorderSize = 0;
             this.c.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.c.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -128,6 +131,7 @@
             this.btnLibro.BackColor = System.Drawing.Color.Transparent;
             this.btnLibro.BackgroundImage = global::Proyecto.Properties.Resources.icons8_literatura_filled_30;
             this.btnLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnLibro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLibro.FlatAppearance.BorderSize = 0;
             this.btnLibro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnLibro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -147,6 +151,7 @@
             this.btnUsuario.BackColor = System.Drawing.Color.Transparent;
             this.btnUsuario.BackgroundImage = global::Proyecto.Properties.Resources.icons8_trabajo_permanente_35_1_;
             this.btnUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnUsuario.FlatAppearance.BorderSize = 0;
             this.btnUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
@@ -168,6 +173,7 @@
             this.btnRevista.BackColor = System.Drawing.Color.Transparent;
             this.btnRevista.BackgroundImage = global::Proyecto.Properties.Resources.icons8_revista_filled_30;
             this.btnRevista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnRevista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRevista.FlatAppearance.BorderSize = 0;
             this.btnRevista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnRevista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -212,6 +218,7 @@
             // btnDevolucion
             // 
             this.btnDevolucion.BackColor = System.Drawing.Color.Transparent;
+            this.btnDevolucion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDevolucion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDevolucion.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -226,6 +233,7 @@
             // btnPrestamo
             // 
             this.btnPrestamo.BackColor = System.Drawing.Color.Transparent;
+            this.btnPrestamo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPrestamo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrestamo.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -240,6 +248,7 @@
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Transparent;
+            this.btnModificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10F);
@@ -255,6 +264,7 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
@@ -270,6 +280,7 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
@@ -285,6 +296,7 @@
             // btnVer
             // 
             this.btnVer.BackColor = System.Drawing.Color.Transparent;
+            this.btnVer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
             this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVer.Font = new System.Drawing.Font("Century Gothic", 11.25F);
@@ -304,7 +316,7 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(222, 145);
+            this.dataGridView1.Location = new System.Drawing.Point(223, 153);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(590, 309);
@@ -312,18 +324,20 @@
             // 
             // tbCodigo
             // 
+            this.tbCodigo.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.tbCodigo.Location = new System.Drawing.Point(684, 117);
             this.tbCodigo.Name = "tbCodigo";
-            this.tbCodigo.Size = new System.Drawing.Size(129, 20);
+            this.tbCodigo.Size = new System.Drawing.Size(129, 24);
             this.tbCodigo.TabIndex = 3;
             // 
             // cbOp
             // 
             this.cbOp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbOp.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.cbOp.FormattingEnabled = true;
             this.cbOp.Location = new System.Drawing.Point(557, 117);
             this.cbOp.Name = "cbOp";
-            this.cbOp.Size = new System.Drawing.Size(121, 21);
+            this.cbOp.Size = new System.Drawing.Size(121, 25);
             this.cbOp.TabIndex = 4;
             // 
             // MainMenuForm

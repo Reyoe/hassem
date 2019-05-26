@@ -50,22 +50,22 @@
             // 
             // BAgregar_Periodico
             // 
-            this.BAgregar_Periodico.BackgroundImage = global::Proyecto.Properties.Resources.green2;
+            this.BAgregar_Periodico.BackColor = System.Drawing.Color.DarkCyan;
             this.BAgregar_Periodico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BAgregar_Periodico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.GreenYellow;
-            this.BAgregar_Periodico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Chartreuse;
+            this.BAgregar_Periodico.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.BAgregar_Periodico.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.BAgregar_Periodico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BAgregar_Periodico.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.BAgregar_Periodico.ForeColor = System.Drawing.Color.White;
             this.BAgregar_Periodico.Image = global::Proyecto.Properties.Resources.icons8_noticias_20;
             this.BAgregar_Periodico.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BAgregar_Periodico.Location = new System.Drawing.Point(141, 324);
+            this.BAgregar_Periodico.Location = new System.Drawing.Point(118, 324);
             this.BAgregar_Periodico.Name = "BAgregar_Periodico";
             this.BAgregar_Periodico.Size = new System.Drawing.Size(116, 49);
             this.BAgregar_Periodico.TabIndex = 37;
             this.BAgregar_Periodico.Text = "AGREGAR";
             this.BAgregar_Periodico.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.BAgregar_Periodico.UseVisualStyleBackColor = true;
+            this.BAgregar_Periodico.UseVisualStyleBackColor = false;
             this.BAgregar_Periodico.Click += new System.EventHandler(this.BAgregar_Periodico_Click);
             // 
             // tbApellido
@@ -246,7 +246,7 @@
             this.BSalir.ForeColor = System.Drawing.Color.White;
             this.BSalir.Image = global::Proyecto.Properties.Resources.icons8_eliminar_filled_20;
             this.BSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BSalir.Location = new System.Drawing.Point(356, 324);
+            this.BSalir.Location = new System.Drawing.Point(376, 324);
             this.BSalir.Name = "BSalir";
             this.BSalir.Size = new System.Drawing.Size(116, 49);
             this.BSalir.TabIndex = 40;
