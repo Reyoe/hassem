@@ -304,15 +304,15 @@
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(277, 187);
+            this.dataGridView1.Location = new System.Drawing.Point(222, 145);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(520, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(590, 309);
             this.dataGridView1.TabIndex = 2;
             // 
             // tbCodigo
             // 
-            this.tbCodigo.Location = new System.Drawing.Point(482, 136);
+            this.tbCodigo.Location = new System.Drawing.Point(684, 117);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(129, 20);
             this.tbCodigo.TabIndex = 3;
@@ -321,7 +321,7 @@
             // 
             this.cbOp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbOp.FormattingEnabled = true;
-            this.cbOp.Location = new System.Drawing.Point(355, 136);
+            this.cbOp.Location = new System.Drawing.Point(557, 117);
             this.cbOp.Name = "cbOp";
             this.cbOp.Size = new System.Drawing.Size(121, 21);
             this.cbOp.TabIndex = 4;
