@@ -243,6 +243,16 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_noticias_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-noticias-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_noticias_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-noticias-35", resourceCulture);
@@ -326,6 +336,26 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap komoLoZupo {
             get {
                 object obj = ResourceManager.GetObject("komoLoZupo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap periodico {
+            get {
+                object obj = ResourceManager.GetObject("periodico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ws_Clean_Light_Gray_Surface_1366x768 {
+            get {
+                object obj = ResourceManager.GetObject("ws_Clean_Light_Gray_Surface_1366x768", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

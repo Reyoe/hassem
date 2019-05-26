@@ -46,12 +46,12 @@ namespace Proyecto
             this.btnLogin = new System.Windows.Forms.Button();
             this.textUser = new System.Windows.Forms.TextBox();
             this.textPassword = new System.Windows.Forms.TextBox();
-            this.logo = new System.Windows.Forms.PictureBox();
             this.logoPassword = new System.Windows.Forms.PictureBox();
             this.logoUser = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
+            this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logoPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogin
@@ -61,9 +61,9 @@ namespace Proyecto
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DodgerBlue;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(96, 265);
+            this.btnLogin.Location = new System.Drawing.Point(96, 267);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(132, 39);
             this.btnLogin.TabIndex = 0;
@@ -75,10 +75,9 @@ namespace Proyecto
             // 
             this.textUser.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUser.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textUser.Location = new System.Drawing.Point(65, 165);
-            this.textUser.Multiline = true;
+            this.textUser.Location = new System.Drawing.Point(65, 185);
             this.textUser.Name = "textUser";
-            this.textUser.Size = new System.Drawing.Size(196, 32);
+            this.textUser.Size = new System.Drawing.Size(196, 26);
             this.textUser.TabIndex = 1;
             this.textUser.Text = "Username";
             this.textUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -89,31 +88,20 @@ namespace Proyecto
             // 
             this.textPassword.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPassword.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textPassword.Location = new System.Drawing.Point(65, 203);
-            this.textPassword.Multiline = true;
+            this.textPassword.Location = new System.Drawing.Point(65, 217);
             this.textPassword.Name = "textPassword";
             this.textPassword.PasswordChar = '*';
-            this.textPassword.Size = new System.Drawing.Size(196, 30);
+            this.textPassword.Size = new System.Drawing.Size(196, 26);
             this.textPassword.TabIndex = 2;
             this.textPassword.Text = "Password";
             this.textPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textPassword.Enter += new System.EventHandler(this.TextPasswordEnter);
             this.textPassword.Leave += new System.EventHandler(this.TextPasswordLeave);
             // 
-            // logo
-            // 
-            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
-            this.logo.Location = new System.Drawing.Point(96, 27);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(132, 107);
-            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logo.TabIndex = 3;
-            this.logo.TabStop = false;
-            // 
             // logoPassword
             // 
             this.logoPassword.Image = ((System.Drawing.Image)(resources.GetObject("logoPassword.Image")));
-            this.logoPassword.Location = new System.Drawing.Point(30, 212);
+            this.logoPassword.Location = new System.Drawing.Point(30, 222);
             this.logoPassword.Name = "logoPassword";
             this.logoPassword.Size = new System.Drawing.Size(29, 21);
             this.logoPassword.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -123,12 +111,22 @@ namespace Proyecto
             // logoUser
             // 
             this.logoUser.Image = ((System.Drawing.Image)(resources.GetObject("logoUser.Image")));
-            this.logoUser.Location = new System.Drawing.Point(30, 165);
+            this.logoUser.Location = new System.Drawing.Point(30, 185);
             this.logoUser.Name = "logoUser";
             this.logoUser.Size = new System.Drawing.Size(29, 32);
             this.logoUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logoUser.TabIndex = 5;
             this.logoUser.TabStop = false;
+            // 
+            // logo
+            // 
+            this.logo.Image = ((System.Drawing.Image)(resources.GetObject("logo.Image")));
+            this.logo.Location = new System.Drawing.Point(96, 39);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(132, 107);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo.TabIndex = 3;
+            this.logo.TabStop = false;
             // 
             // Login
             // 
@@ -146,12 +144,12 @@ namespace Proyecto
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
 		}
-	}
+    }
 }
