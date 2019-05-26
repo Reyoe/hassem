@@ -73,6 +73,36 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _240_F_110821411_fBvNrrY6ITg43X51TuRFv4keqJJb6VSb {
+            get {
+                object obj = ResourceManager.GetObject("240_F_110821411_fBvNrrY6ITg43X51TuRFv4keqJJb6VSb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _394862 {
+            get {
+                object obj = ResourceManager.GetObject("394862", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _689175 {
+            get {
+                object obj = ResourceManager.GetObject("689175", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_portada_area_cliente {
             get {
                 object obj = ResourceManager.GetObject("fondo-portada-area-cliente", resourceCulture);
@@ -83,9 +113,59 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap green {
+            get {
+                object obj = ResourceManager.GetObject("green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap green2 {
+            get {
+                object obj = ResourceManager.GetObject("green2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_agregar_usuario_masculino_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-agregar-usuario-masculino-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_libro_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-libro-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_usuario_masculino_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-usuario-masculino-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_usuario_masculino_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-usuario-masculino-30", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +196,16 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap icons8_contactos_filled_50 {
             get {
                 object obj = ResourceManager.GetObject("icons8-contactos-filled-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_eliminar_filled_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-eliminar-filled-20", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
