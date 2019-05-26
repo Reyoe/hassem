@@ -20,6 +20,11 @@ namespace Proyecto
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
-
+        public void updateVideo(string id,string editorial, string nombre_autor, string apellido_autor, string titulo, string anio)
+        {
+            string query = "UPDATE video SET editorial='" + editorial + "',nombre_autor='" + nombre_autor + "',apellido_autor='" + apellido_autor + "',titulo='" + titulo + "',anio='" + anio + "' WHERE id='"+id+"';";
+            Console.WriteLine(query);
+            Conexion.query(query); ;
+        }
     }
 }

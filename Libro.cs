@@ -26,6 +26,11 @@ namespace Proyecto
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
-
+        public void updateLibro(string isbn, string edicion, string editorial, string no_paginas, string nombre_autor, string apellido_autor, string titulo, string anio, string cantidad)
+        {
+            string query = "UPDATE libro SET edicion='" + edicion + "',editorial='" + editorial + "',no_paginas='" + no_paginas + "',nombre_autor='" + nombre_autor + "',apellido_autor='" + apellido_autor + "',titulo='" + titulo + "',anio='" + anio + "',cantidad='" + cantidad + "' WHERE isbn='"+ isbn+"';";
+            Console.WriteLine(query);
+            Conexion.query(query); ;
+        }
     }
 }
