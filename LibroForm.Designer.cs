@@ -266,6 +266,7 @@
             // 
             this.BAgregar_libro.BackColor = System.Drawing.Color.DarkCyan;
             this.BAgregar_libro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BAgregar_libro.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BAgregar_libro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.BAgregar_libro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.BAgregar_libro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -286,6 +287,7 @@
             // 
             this.BSalir.BackColor = System.Drawing.Color.Maroon;
             this.BSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.BSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

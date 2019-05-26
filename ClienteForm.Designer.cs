@@ -195,6 +195,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.DarkCyan;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -214,6 +215,7 @@
             // BSalir
             // 
             this.BSalir.BackColor = System.Drawing.Color.Maroon;
+            this.BSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.BSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -54,6 +54,7 @@
             // BAgregar_Revista
             // 
             this.BAgregar_Revista.BackColor = System.Drawing.Color.DarkCyan;
+            this.BAgregar_Revista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BAgregar_Revista.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.BAgregar_Revista.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.BAgregar_Revista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -220,6 +221,7 @@
             // BSalir
             // 
             this.BSalir.BackColor = System.Drawing.Color.Maroon;
+            this.BSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.BSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
