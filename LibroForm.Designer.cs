@@ -282,6 +282,8 @@
             // 
             this.BSalir.BackColor = System.Drawing.Color.Maroon;
             this.BSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BSalir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.BSalir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.BSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BSalir.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.BSalir.ForeColor = System.Drawing.Color.White;
