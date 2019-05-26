@@ -160,15 +160,14 @@ namespace Proyecto
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
                     d.deleteLibro(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                    MessageBox.Show("Cliente eliminado con exito");
+                    MessageBox.Show("Libro eliminado con exito");
 
                 }
                 else
                 {
-                    MessageBox.Show("No exixten clientes");
+                    MessageBox.Show("No exixten libros");
 
                 }
-                dataGridView1.DataSource = Conexion.query("SELECT * FROM cliente");
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM libro");
             }
             else if (moduloActual == "REVISTA")
