@@ -117,7 +117,7 @@ namespace Proyecto
                     colonia = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
                     calle = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
                     no = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-                    ClienteForm myFormClie = new ClienteForm(curp, nombre, apellido, correo, colonia, calle, no);
+                    ClienteForm myFormClie = new ClienteForm(curp, nombre, apellido, correo, colonia, calle, no,"mostrar");
                     myFormClie.ShowDialog();
                 }
                 else
@@ -297,14 +297,28 @@ namespace Proyecto
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
+            string curp, nombre, apellido, correo, colonia, calle, no, isbn, edicion, id, editorial, paginas, titulo, año, cantidad, secciones;
             if (moduloActual == "USUARIO")
             {
             }
             else if (moduloActual == "CLIENTE")
             {
-                Cliente d = new Cliente();
-                //d.deleteCliente(tbCodigo.Text);
-                dataGridView1.DataSource = Conexion.query("SELECT * FROM cliente");
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    curp = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                    nombre = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                    apellido = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                    correo = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                    colonia = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                    calle = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                    no = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                    ClienteForm myFormClie = new ClienteForm(curp, nombre, apellido, correo, colonia, calle, no, "modificar");
+                    myFormClie.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("No existen clientes que mostrar");
+                }
             }
             else if (moduloActual == "LIBRO")
             {
