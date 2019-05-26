@@ -40,6 +40,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.BAgregar_Video = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.lbCantidad = new System.Windows.Forms.Label();
+            this.tbCantidad = new System.Windows.Forms.TextBox();
+            this.lBNVideo = new System.Windows.Forms.Label();
+            this.pbVideo = new System.Windows.Forms.PictureBox();
+            this.pVideo = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVideo)).BeginInit();
+            this.pVideo.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbApellido
@@ -177,7 +184,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::Proyecto.Properties.Resources.icons8_eliminar_filled_20;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(306, 323);
+            this.button1.Location = new System.Drawing.Point(294, 323);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(116, 49);
             this.button1.TabIndex = 52;
@@ -186,13 +193,73 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // lbCantidad
+            // 
+            this.lbCantidad.AutoSize = true;
+            this.lbCantidad.BackColor = System.Drawing.Color.Transparent;
+            this.lbCantidad.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbCantidad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbCantidad.Location = new System.Drawing.Point(398, 250);
+            this.lbCantidad.Name = "lbCantidad";
+            this.lbCantidad.Size = new System.Drawing.Size(79, 21);
+            this.lbCantidad.TabIndex = 53;
+            this.lbCantidad.Text = "Cantidad";
+            // 
+            // tbCantidad
+            // 
+            this.tbCantidad.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbCantidad.Location = new System.Drawing.Point(402, 274);
+            this.tbCantidad.Name = "tbCantidad";
+            this.tbCantidad.Size = new System.Drawing.Size(157, 23);
+            this.tbCantidad.TabIndex = 54;
+            this.tbCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lBNVideo
+            // 
+            this.lBNVideo.AutoSize = true;
+            this.lBNVideo.BackColor = System.Drawing.Color.Transparent;
+            this.lBNVideo.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lBNVideo.ForeColor = System.Drawing.Color.Black;
+            this.lBNVideo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lBNVideo.Location = new System.Drawing.Point(218, 8);
+            this.lBNVideo.Name = "lBNVideo";
+            this.lBNVideo.Size = new System.Drawing.Size(239, 39);
+            this.lBNVideo.TabIndex = 55;
+            this.lBNVideo.Text = "NUEVO VIDEO";
+            this.lBNVideo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pbVideo
+            // 
+            this.pbVideo.Image = global::Proyecto.Properties.Resources.icons8_programa_de_televisión_filled_50__1_;
+            this.pbVideo.Location = new System.Drawing.Point(107, -1);
+            this.pbVideo.Name = "pbVideo";
+            this.pbVideo.Size = new System.Drawing.Size(53, 50);
+            this.pbVideo.TabIndex = 56;
+            this.pbVideo.TabStop = false;
+            // 
+            // pVideo
+            // 
+            this.pVideo.BackColor = System.Drawing.Color.Transparent;
+            this.pVideo.BackgroundImage = global::Proyecto.Properties.Resources.ws_Clean_Light_Gray_Surface_1366x768;
+            this.pVideo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pVideo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pVideo.Controls.Add(this.pbVideo);
+            this.pVideo.Controls.Add(this.lBNVideo);
+            this.pVideo.Location = new System.Drawing.Point(1, -1);
+            this.pVideo.Name = "pVideo";
+            this.pVideo.Size = new System.Drawing.Size(669, 56);
+            this.pVideo.TabIndex = 56;
+            // 
             // VideoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.video1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(668, 451);
+            this.ClientSize = new System.Drawing.Size(668, 423);
+            this.Controls.Add(this.pVideo);
+            this.Controls.Add(this.tbCantidad);
+            this.Controls.Add(this.lbCantidad);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.BAgregar_Video);
             this.Controls.Add(this.tbApellido);
@@ -205,8 +272,13 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VideoForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VideoForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pbVideo)).EndInit();
+            this.pVideo.ResumeLayout(false);
+            this.pVideo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +298,10 @@
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Button BAgregar_Video;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbCantidad;
+        private System.Windows.Forms.TextBox tbCantidad;
+        private System.Windows.Forms.Label lBNVideo;
+        private System.Windows.Forms.PictureBox pbVideo;
+        private System.Windows.Forms.Panel pVideo;
     }
 }

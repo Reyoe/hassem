@@ -44,6 +44,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.BSalir = new System.Windows.Forms.Button();
+            this.pRevista = new System.Windows.Forms.Panel();
+            this.pBRevista = new System.Windows.Forms.PictureBox();
+            this.lbNRevista = new System.Windows.Forms.Label();
+            this.pRevista.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBRevista)).BeginInit();
             this.SuspendLayout();
             // 
             // BAgregar_Revista
@@ -231,12 +236,50 @@
             this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
             // 
+            // pRevista
+            // 
+            this.pRevista.BackColor = System.Drawing.Color.Transparent;
+            this.pRevista.BackgroundImage = global::Proyecto.Properties.Resources.ws_Clean_Light_Gray_Surface_1366x768;
+            this.pRevista.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pRevista.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pRevista.Controls.Add(this.pBRevista);
+            this.pRevista.Controls.Add(this.lbNRevista);
+            this.pRevista.Location = new System.Drawing.Point(1, 1);
+            this.pRevista.Name = "pRevista";
+            this.pRevista.Size = new System.Drawing.Size(617, 56);
+            this.pRevista.TabIndex = 57;
+            // 
+            // pBRevista
+            // 
+            this.pBRevista.Image = global::Proyecto.Properties.Resources.icons8_revista_filled_50;
+            this.pBRevista.Location = new System.Drawing.Point(107, -1);
+            this.pBRevista.Name = "pBRevista";
+            this.pBRevista.Size = new System.Drawing.Size(46, 46);
+            this.pBRevista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBRevista.TabIndex = 56;
+            this.pBRevista.TabStop = false;
+            // 
+            // lbNRevista
+            // 
+            this.lbNRevista.AutoSize = true;
+            this.lbNRevista.BackColor = System.Drawing.Color.Transparent;
+            this.lbNRevista.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNRevista.ForeColor = System.Drawing.Color.Black;
+            this.lbNRevista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNRevista.Location = new System.Drawing.Point(193, 6);
+            this.lbNRevista.Name = "lbNRevista";
+            this.lbNRevista.Size = new System.Drawing.Size(253, 39);
+            this.lbNRevista.TabIndex = 55;
+            this.lbNRevista.Text = "NUEVA REVISTA";
+            this.lbNRevista.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // RevistaForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto.Properties.Resources.m42;
             this.ClientSize = new System.Drawing.Size(616, 373);
+            this.Controls.Add(this.pRevista);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.BAgregar_Revista);
             this.Controls.Add(this.tbApellido);
@@ -253,8 +296,12 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RevistaForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.pRevista.ResumeLayout(false);
+            this.pRevista.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBRevista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,5 +325,8 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button BSalir;
+        private System.Windows.Forms.Panel pRevista;
+        private System.Windows.Forms.PictureBox pBRevista;
+        private System.Windows.Forms.Label lbNRevista;
     }
 }

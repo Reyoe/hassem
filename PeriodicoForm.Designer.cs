@@ -46,6 +46,11 @@
             this.tbSecciones = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.BSalir = new System.Windows.Forms.Button();
+            this.pPeriodico = new System.Windows.Forms.Panel();
+            this.pBPeriodico = new System.Windows.Forms.PictureBox();
+            this.lbNPeriodico = new System.Windows.Forms.Label();
+            this.pPeriodico.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBPeriodico)).BeginInit();
             this.SuspendLayout();
             // 
             // BAgregar_Periodico
@@ -255,6 +260,43 @@
             this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
             // 
+            // pPeriodico
+            // 
+            this.pPeriodico.BackColor = System.Drawing.Color.Transparent;
+            this.pPeriodico.BackgroundImage = global::Proyecto.Properties.Resources.ws_Clean_Light_Gray_Surface_1366x768;
+            this.pPeriodico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pPeriodico.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pPeriodico.Controls.Add(this.pBPeriodico);
+            this.pPeriodico.Controls.Add(this.lbNPeriodico);
+            this.pPeriodico.Location = new System.Drawing.Point(-2, 1);
+            this.pPeriodico.Name = "pPeriodico";
+            this.pPeriodico.Size = new System.Drawing.Size(608, 56);
+            this.pPeriodico.TabIndex = 58;
+            // 
+            // pBPeriodico
+            // 
+            this.pBPeriodico.Image = global::Proyecto.Properties.Resources.icons8_noticias_filled_50;
+            this.pBPeriodico.Location = new System.Drawing.Point(94, 3);
+            this.pBPeriodico.Name = "pBPeriodico";
+            this.pBPeriodico.Size = new System.Drawing.Size(46, 46);
+            this.pBPeriodico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBPeriodico.TabIndex = 56;
+            this.pBPeriodico.TabStop = false;
+            // 
+            // lbNPeriodico
+            // 
+            this.lbNPeriodico.AutoSize = true;
+            this.lbNPeriodico.BackColor = System.Drawing.Color.Transparent;
+            this.lbNPeriodico.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNPeriodico.ForeColor = System.Drawing.Color.Black;
+            this.lbNPeriodico.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNPeriodico.Location = new System.Drawing.Point(155, 6);
+            this.lbNPeriodico.Name = "lbNPeriodico";
+            this.lbNPeriodico.Size = new System.Drawing.Size(316, 39);
+            this.lbNPeriodico.TabIndex = 55;
+            this.lbNPeriodico.Text = "NUEVO PERIÓDICO";
+            this.lbNPeriodico.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // PeriodicoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,6 +304,7 @@
             this.BackgroundImage = global::Proyecto.Properties.Resources.periodico;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(602, 395);
+            this.Controls.Add(this.pPeriodico);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.tbSecciones);
             this.Controls.Add(this.label1);
@@ -280,10 +323,13 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PeriodicoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PeriodicoForm";
+            this.pPeriodico.ResumeLayout(false);
+            this.pPeriodico.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBPeriodico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -309,5 +355,8 @@
 		private System.Windows.Forms.TextBox tbSecciones;
 		private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BSalir;
+        private System.Windows.Forms.Panel pPeriodico;
+        private System.Windows.Forms.PictureBox pBPeriodico;
+        private System.Windows.Forms.Label lbNPeriodico;
     }
 }

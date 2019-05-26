@@ -276,5 +276,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-vídeo-filled-20.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-programa-de-televisión-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-programa-de-televisión-filled-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orig_59048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-revista-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-noticias-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-literatura-filled-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

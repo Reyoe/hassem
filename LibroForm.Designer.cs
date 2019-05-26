@@ -48,6 +48,11 @@
             this.tbApellido = new System.Windows.Forms.TextBox();
             this.BAgregar_libro = new System.Windows.Forms.Button();
             this.BSalir = new System.Windows.Forms.Button();
+            this.pLibro = new System.Windows.Forms.Panel();
+            this.pBlibro = new System.Windows.Forms.PictureBox();
+            this.lbNLibro = new System.Windows.Forms.Label();
+            this.pLibro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBlibro)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -297,6 +302,43 @@
             this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
             // 
+            // pLibro
+            // 
+            this.pLibro.BackColor = System.Drawing.Color.Transparent;
+            this.pLibro.BackgroundImage = global::Proyecto.Properties.Resources.ws_Clean_Light_Gray_Surface_1366x768;
+            this.pLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pLibro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pLibro.Controls.Add(this.pBlibro);
+            this.pLibro.Controls.Add(this.lbNLibro);
+            this.pLibro.Location = new System.Drawing.Point(0, 0);
+            this.pLibro.Name = "pLibro";
+            this.pLibro.Size = new System.Drawing.Size(670, 56);
+            this.pLibro.TabIndex = 59;
+            // 
+            // pBlibro
+            // 
+            this.pBlibro.Image = global::Proyecto.Properties.Resources.icons8_literatura_filled_50;
+            this.pBlibro.Location = new System.Drawing.Point(137, 3);
+            this.pBlibro.Name = "pBlibro";
+            this.pBlibro.Size = new System.Drawing.Size(46, 46);
+            this.pBlibro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBlibro.TabIndex = 56;
+            this.pBlibro.TabStop = false;
+            // 
+            // lbNLibro
+            // 
+            this.lbNLibro.AutoSize = true;
+            this.lbNLibro.BackColor = System.Drawing.Color.Transparent;
+            this.lbNLibro.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNLibro.ForeColor = System.Drawing.Color.Black;
+            this.lbNLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNLibro.Location = new System.Drawing.Point(224, 3);
+            this.lbNLibro.Name = "lbNLibro";
+            this.lbNLibro.Size = new System.Drawing.Size(227, 39);
+            this.lbNLibro.TabIndex = 55;
+            this.lbNLibro.Text = "NUEVO LIBRO";
+            this.lbNLibro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // LibroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +346,7 @@
             this.BackgroundImage = global::Proyecto.Properties.Resources._394862;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(668, 451);
+            this.Controls.Add(this.pLibro);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.BAgregar_libro);
             this.Controls.Add(this.tbApellido);
@@ -324,10 +367,13 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LibroForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LibroForm";
+            this.pLibro.ResumeLayout(false);
+            this.pLibro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBlibro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,5 +401,8 @@
 		private System.Windows.Forms.TextBox tbApellido;
 		private System.Windows.Forms.Button BAgregar_libro;
         private System.Windows.Forms.Button BSalir;
+        private System.Windows.Forms.Panel pLibro;
+        private System.Windows.Forms.PictureBox pBlibro;
+        private System.Windows.Forms.Label lbNLibro;
     }
 }

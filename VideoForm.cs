@@ -67,7 +67,6 @@ namespace Proyecto
                 myVideo.insertVideo(tbEditorial.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text);
             }
         }
-
         private void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
