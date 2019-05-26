@@ -44,9 +44,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.BSalir = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Encabezado = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pBCliente = new System.Windows.Forms.PictureBox();
+            this.lbNCliente = new System.Windows.Forms.Label();
+            this.pCliente = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pBCliente)).BeginInit();
+            this.pCliente.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbCurp
@@ -228,28 +230,42 @@
             this.BSalir.UseVisualStyleBackColor = false;
             this.BSalir.Click += new System.EventHandler(this.BSalir_Click);
             // 
-            // panel1
+            // pBCliente
             // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Controls.Add(this.Encabezado);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(581, 63);
-            this.panel1.TabIndex = 17;
+            this.pBCliente.Image = global::Proyecto.Properties.Resources.icons8_añadir_usuario_masculino_50;
+            this.pBCliente.Location = new System.Drawing.Point(86, 3);
+            this.pBCliente.Name = "pBCliente";
+            this.pBCliente.Size = new System.Drawing.Size(46, 46);
+            this.pBCliente.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBCliente.TabIndex = 56;
+            this.pBCliente.TabStop = false;
             // 
-            // Encabezado
+            // lbNCliente
             // 
-            this.Encabezado.AutoSize = true;
-            this.Encabezado.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Encabezado.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Encabezado.ForeColor = System.Drawing.Color.Transparent;
-            this.Encabezado.Location = new System.Drawing.Point(137, 9);
-            this.Encabezado.Name = "Encabezado";
-            this.Encabezado.Size = new System.Drawing.Size(303, 39);
-            this.Encabezado.TabIndex = 0;
-            this.Encabezado.Text = "AGREGAR CLIENTE";
-            this.Encabezado.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbNCliente.AutoSize = true;
+            this.lbNCliente.BackColor = System.Drawing.Color.Transparent;
+            this.lbNCliente.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNCliente.ForeColor = System.Drawing.Color.White;
+            this.lbNCliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNCliente.Location = new System.Drawing.Point(158, 7);
+            this.lbNCliente.Name = "lbNCliente";
+            this.lbNCliente.Size = new System.Drawing.Size(259, 39);
+            this.lbNCliente.TabIndex = 55;
+            this.lbNCliente.Text = "NUEVO CLIENTE";
+            this.lbNCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pCliente
+            // 
+            this.pCliente.BackColor = System.Drawing.Color.Transparent;
+            this.pCliente.BackgroundImage = global::Proyecto.Properties.Resources._704059_1920_1200;
+            this.pCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pCliente.Controls.Add(this.lbNCliente);
+            this.pCliente.Controls.Add(this.pBCliente);
+            this.pCliente.Location = new System.Drawing.Point(0, 0);
+            this.pCliente.Name = "pCliente";
+            this.pCliente.Size = new System.Drawing.Size(585, 56);
+            this.pCliente.TabIndex = 59;
             // 
             // ClienteForm
             // 
@@ -258,7 +274,7 @@
             this.BackgroundImage = global::Proyecto.Properties.Resources.fondo_portada_area_cliente;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(581, 403);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pCliente);
             this.Controls.Add(this.BSalir);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -275,12 +291,13 @@
             this.Controls.Add(this.tbCorreo);
             this.Controls.Add(this.tbApellido);
             this.Controls.Add(this.tbCurp);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClienteForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ClienteForm";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBCliente)).EndInit();
+            this.pCliente.ResumeLayout(false);
+            this.pCliente.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,7 +321,8 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BSalir;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label Encabezado;
+        private System.Windows.Forms.PictureBox pBCliente;
+        private System.Windows.Forms.Label lbNCliente;
+        private System.Windows.Forms.Panel pCliente;
     }
 }

@@ -297,5 +297,20 @@
   <ItemGroup>
     <None Include="Resources\icons8-libros-30.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-usuario-masculino-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\704059_1920_1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gerente-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gerente-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-trabajo-permanente-filled-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

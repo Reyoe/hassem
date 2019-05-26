@@ -39,6 +39,5 @@ namespace Proyecto
             this.Close();
         }
 
-
     }
 }

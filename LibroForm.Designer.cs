@@ -318,7 +318,7 @@
             // pBlibro
             // 
             this.pBlibro.Image = global::Proyecto.Properties.Resources.icons8_literatura_filled_50;
-            this.pBlibro.Location = new System.Drawing.Point(137, 3);
+            this.pBlibro.Location = new System.Drawing.Point(120, 3);
             this.pBlibro.Name = "pBlibro";
             this.pBlibro.Size = new System.Drawing.Size(46, 46);
             this.pBlibro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

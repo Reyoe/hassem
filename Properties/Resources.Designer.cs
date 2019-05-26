@@ -103,6 +103,16 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _704059_1920_1200 {
+            get {
+                object obj = ResourceManager.GetObject("704059_1920_1200", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap fondo_portada_area_cliente {
             get {
                 object obj = ResourceManager.GetObject("fondo-portada-area-cliente", resourceCulture);
@@ -173,6 +183,16 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_usuario_masculino_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-usuario-masculino-50", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_contactos_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8-contactos-35", resourceCulture);
@@ -206,6 +226,26 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap icons8_eliminar_filled_20 {
             get {
                 object obj = ResourceManager.GetObject("icons8-eliminar-filled-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_gerente_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gerente-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_gerente_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-gerente-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -386,6 +426,16 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap icons8_trabajo_permanente_35_1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-trabajo-permanente-35(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_trabajo_permanente_filled_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-trabajo-permanente-filled-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
