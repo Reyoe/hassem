@@ -264,9 +264,9 @@
             this.pCliente.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pCliente.Controls.Add(this.lbNCliente);
             this.pCliente.Controls.Add(this.pBCliente);
-            this.pCliente.Location = new System.Drawing.Point(0, 0);
+            this.pCliente.Location = new System.Drawing.Point(-1, 0);
             this.pCliente.Name = "pCliente";
-            this.pCliente.Size = new System.Drawing.Size(585, 56);
+            this.pCliente.Size = new System.Drawing.Size(580, 56);
             this.pCliente.TabIndex = 59;
             // 
             // ClienteForm

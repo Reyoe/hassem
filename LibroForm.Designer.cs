@@ -307,7 +307,7 @@
             // pLibro
             // 
             this.pLibro.BackColor = System.Drawing.Color.Transparent;
-            this.pLibro.BackgroundImage = global::Proyecto.Properties.Resources.ws_Clean_Light_Gray_Surface_1366x768;
+            this.pLibro.BackgroundImage = global::Proyecto.Properties.Resources._704059_1920_1200;
             this.pLibro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pLibro.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pLibro.Controls.Add(this.pBlibro);
@@ -332,7 +332,7 @@
             this.lbNLibro.AutoSize = true;
             this.lbNLibro.BackColor = System.Drawing.Color.Transparent;
             this.lbNLibro.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbNLibro.ForeColor = System.Drawing.Color.Black;
+            this.lbNLibro.ForeColor = System.Drawing.Color.White;
             this.lbNLibro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lbNLibro.Location = new System.Drawing.Point(224, 3);
             this.lbNLibro.Name = "lbNLibro";
