@@ -243,5 +243,14 @@
   <ItemGroup>
     <None Include="Resources\green2.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ws_Clean_Light_Gray_Surface_1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\periodico.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-noticias-20.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

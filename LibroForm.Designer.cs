@@ -262,6 +262,8 @@
             this.BAgregar_libro.BackColor = System.Drawing.Color.YellowGreen;
             this.BAgregar_libro.BackgroundImage = global::Proyecto.Properties.Resources.green2;
             this.BAgregar_libro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BAgregar_libro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Chartreuse;
+            this.BAgregar_libro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LawnGreen;
             this.BAgregar_libro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BAgregar_libro.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.BAgregar_libro.ForeColor = System.Drawing.Color.White;
