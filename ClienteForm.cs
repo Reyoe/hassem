@@ -16,13 +16,32 @@ namespace Proyecto
 		public ClienteForm()
 		{
 			myCliente = new Cliente();
+
 			InitializeComponent();
 		}
-        public ClienteForm(string code)
+        public ClienteForm(string curp, string nombre, string apellido, string correo, string colonia, string calle, string no)
         {
-
             myCliente = new Cliente();
+
             InitializeComponent();
+
+            tbCurp.Text = curp;
+            tbNombre.Text = nombre;
+            tbApellido.Text = apellido;
+            tbCorreo.Text = correo;
+            tbColonia.Text = colonia;
+            tbCalle.Text = calle;
+            tbNo.Text = no;
+
+            tbCurp.Enabled = false;
+            tbNombre.Enabled = false;
+            tbApellido.Enabled = false;
+            tbCorreo.Enabled = false;
+            tbColonia.Enabled = false;
+            tbCalle.Enabled = false;
+            tbNo.Enabled = false;
+
+            button1.Enabled = false;
         }
         private void Button1_Click(object sender, EventArgs e)
 		{

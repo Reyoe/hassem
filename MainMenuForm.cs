@@ -106,9 +106,16 @@ namespace Proyecto
                 myusuarioAdOp.ShowDialog();
             }
             else if (moduloActual == "CLIENTE")
-            { 
-                
-                ClienteForm myFormClie = new ClienteForm();
+            {
+                string curp, nombre, apellido, correo, colonia, calle, no;
+                curp = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                nombre = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                apellido = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                correo= dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                colonia= dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                calle= dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                no= dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                ClienteForm myFormClie = new ClienteForm(curp, nombre, apellido, correo, colonia, calle, no);
                 myFormClie.ShowDialog();
             }
             else if (moduloActual == "LIBRO")
