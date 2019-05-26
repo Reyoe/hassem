@@ -18,8 +18,12 @@ namespace Proyecto
 			myRevista = new Revista();
 			InitializeComponent();
 		}
-
-		private void BAgregar_Revista_Click(object sender, EventArgs e)
+        public RevistaForm(string editorial, string paginas, string nombre, string apellido, string titulo, string año, string cantidad)
+        {
+            myRevista = new Revista();
+            InitializeComponent();
+        }
+        private void BAgregar_Revista_Click(object sender, EventArgs e)
 		{
 			myRevista.insertRevista(tbEditorial.Text, tbNo_paginas.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text, tbCantidad.Text);
 
