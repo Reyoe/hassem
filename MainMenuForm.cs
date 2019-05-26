@@ -165,7 +165,7 @@ namespace Proyecto
                 }
                 else
                 {
-                    MessageBox.Show("No exixten libros");
+                    MessageBox.Show("No existen libros");
 
                 }
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM libro");
@@ -173,19 +173,48 @@ namespace Proyecto
             else if (moduloActual == "REVISTA")
             {
                 Revista d = new Revista();
-                d.deleteRevista(tbCodigo.Text);
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    d.deleteRevista(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    MessageBox.Show("Revista eliminado con exito");
+
+                }
+                else
+                {
+                    MessageBox.Show("No existen revistas");
+
+                }
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM revista");
             }
             else if (moduloActual == "VIDEO")
             {
                 Video d = new Video();
-                d.deleteVideo(tbCodigo.Text);
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    d.deleteVideo(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    MessageBox.Show("Video eliminado con exito");
+
+                }
+                else
+                {
+                    MessageBox.Show("No existen videos");
+
+                }
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM video");
             }
             else if (moduloActual == "PERIODICO")
             {
                 Periodico d = new Periodico();
-                d.deletePeriodico(tbCodigo.Text);
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    d.deletePeriodico(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    MessageBox.Show("Periodico eliminado con exito");
+                }
+                else
+                {
+                    MessageBox.Show("No existen periodicos");
+
+                }
                 dataGridView1.DataSource = Conexion.query("SELECT * FROM periodico");
             }
         }

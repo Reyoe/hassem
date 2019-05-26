@@ -20,6 +20,7 @@ namespace Proyecto
 		}
         public ClienteForm(string code)
         {
+
             myCliente = new Cliente();
             InitializeComponent();
         }
