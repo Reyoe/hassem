@@ -230,7 +230,7 @@
             this.btnPrestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPrestamo.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.btnPrestamo.ForeColor = System.Drawing.Color.White;
-            this.btnPrestamo.Location = new System.Drawing.Point(449, 54);
+            this.btnPrestamo.Location = new System.Drawing.Point(432, 55);
             this.btnPrestamo.Name = "btnPrestamo";
             this.btnPrestamo.Size = new System.Drawing.Size(108, 53);
             this.btnPrestamo.TabIndex = 10;
@@ -244,7 +244,7 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(342, 54);
+            this.btnModificar.Location = new System.Drawing.Point(324, 55);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(108, 53);
             this.btnModificar.TabIndex = 9;
@@ -274,7 +274,7 @@
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(228, 55);
+            this.btnEliminar.Location = new System.Drawing.Point(216, 55);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(108, 53);
             this.btnEliminar.TabIndex = 8;
@@ -289,7 +289,7 @@
             this.btnVer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVer.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.btnVer.ForeColor = System.Drawing.Color.White;
-            this.btnVer.Location = new System.Drawing.Point(114, 55);
+            this.btnVer.Location = new System.Drawing.Point(108, 55);
             this.btnVer.Name = "btnVer";
             this.btnVer.Size = new System.Drawing.Size(108, 53);
             this.btnVer.TabIndex = 7;
