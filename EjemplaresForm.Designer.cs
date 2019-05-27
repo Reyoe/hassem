@@ -28,142 +28,236 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lbId_ejemplar = new System.Windows.Forms.Label();
+            this.lbIsbnL = new System.Windows.Forms.Label();
+            this.lbEstado = new System.Windows.Forms.Label();
+            this.lbDescripcion = new System.Windows.Forms.Label();
+            this.lbObservaciones = new System.Windows.Forms.Label();
+            this.lbCaducidad = new System.Windows.Forms.Label();
             this.tbId_ejemplar = new System.Windows.Forms.TextBox();
             this.tbIsbnLibro = new System.Windows.Forms.TextBox();
             this.tbDescripcion = new System.Windows.Forms.TextBox();
             this.tbEstado = new System.Windows.Forms.TextBox();
             this.tbCaducidad = new System.Windows.Forms.TextBox();
             this.tbObservaciones = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pEjemplar = new System.Windows.Forms.Panel();
+            this.lbEjemplar = new System.Windows.Forms.Label();
+            this.pBEjemplar = new System.Windows.Forms.PictureBox();
+            this.pEjemplar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBEjemplar)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbId_ejemplar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Id_ejemplar";
+            this.lbId_ejemplar.AutoSize = true;
+            this.lbId_ejemplar.BackColor = System.Drawing.Color.Transparent;
+            this.lbId_ejemplar.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbId_ejemplar.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbId_ejemplar.Location = new System.Drawing.Point(80, 121);
+            this.lbId_ejemplar.Name = "lbId_ejemplar";
+            this.lbId_ejemplar.Size = new System.Drawing.Size(102, 21);
+            this.lbId_ejemplar.TabIndex = 0;
+            this.lbId_ejemplar.Text = "Id_Ejemplar";
             // 
-            // label2
+            // lbIsbnL
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(439, 81);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Isbn_Libro";
+            this.lbIsbnL.AutoSize = true;
+            this.lbIsbnL.BackColor = System.Drawing.Color.Transparent;
+            this.lbIsbnL.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbIsbnL.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbIsbnL.Location = new System.Drawing.Point(80, 184);
+            this.lbIsbnL.Name = "lbIsbnL";
+            this.lbIsbnL.Size = new System.Drawing.Size(96, 21);
+            this.lbIsbnL.TabIndex = 1;
+            this.lbIsbnL.Text = "ISBN_Libro";
             // 
-            // label3
+            // lbEstado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(436, 165);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Estado";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
+            this.lbEstado.AutoSize = true;
+            this.lbEstado.BackColor = System.Drawing.Color.Transparent;
+            this.lbEstado.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbEstado.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbEstado.Location = new System.Drawing.Point(308, 121);
+            this.lbEstado.Name = "lbEstado";
+            this.lbEstado.Size = new System.Drawing.Size(62, 21);
+            this.lbEstado.TabIndex = 2;
+            this.lbEstado.Text = "Estado";
+            this.lbEstado.Click += new System.EventHandler(this.Label3_Click);
             // 
-            // label4
+            // lbDescripcion
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(86, 192);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Descripcion";
+            this.lbDescripcion.AutoSize = true;
+            this.lbDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.lbDescripcion.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbDescripcion.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbDescripcion.Location = new System.Drawing.Point(80, 245);
+            this.lbDescripcion.Name = "lbDescripcion";
+            this.lbDescripcion.Size = new System.Drawing.Size(99, 21);
+            this.lbDescripcion.TabIndex = 3;
+            this.lbDescripcion.Text = "Descripción";
             // 
-            // label5
+            // lbObservaciones
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(439, 258);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Observaciones";
+            this.lbObservaciones.AutoSize = true;
+            this.lbObservaciones.BackColor = System.Drawing.Color.Transparent;
+            this.lbObservaciones.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbObservaciones.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbObservaciones.Location = new System.Drawing.Point(308, 245);
+            this.lbObservaciones.Name = "lbObservaciones";
+            this.lbObservaciones.Size = new System.Drawing.Size(120, 21);
+            this.lbObservaciones.TabIndex = 4;
+            this.lbObservaciones.Text = "Observaciones";
             // 
-            // label6
+            // lbCaducidad
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(89, 258);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Caducidad";
+            this.lbCaducidad.AutoSize = true;
+            this.lbCaducidad.BackColor = System.Drawing.Color.Transparent;
+            this.lbCaducidad.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold);
+            this.lbCaducidad.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lbCaducidad.Location = new System.Drawing.Point(308, 184);
+            this.lbCaducidad.Name = "lbCaducidad";
+            this.lbCaducidad.Size = new System.Drawing.Size(91, 21);
+            this.lbCaducidad.TabIndex = 5;
+            this.lbCaducidad.Text = "Caducidad";
             // 
             // tbId_ejemplar
             // 
-            this.tbId_ejemplar.Location = new System.Drawing.Point(191, 81);
+            this.tbId_ejemplar.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbId_ejemplar.Location = new System.Drawing.Point(84, 145);
             this.tbId_ejemplar.Name = "tbId_ejemplar";
-            this.tbId_ejemplar.Size = new System.Drawing.Size(100, 20);
+            this.tbId_ejemplar.Size = new System.Drawing.Size(157, 23);
             this.tbId_ejemplar.TabIndex = 7;
+            this.tbId_ejemplar.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbIsbnLibro
             // 
-            this.tbIsbnLibro.Location = new System.Drawing.Point(522, 81);
+            this.tbIsbnLibro.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbIsbnLibro.Location = new System.Drawing.Point(84, 208);
             this.tbIsbnLibro.Name = "tbIsbnLibro";
-            this.tbIsbnLibro.Size = new System.Drawing.Size(100, 20);
+            this.tbIsbnLibro.Size = new System.Drawing.Size(157, 23);
             this.tbIsbnLibro.TabIndex = 8;
+            this.tbIsbnLibro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbDescripcion
             // 
-            this.tbDescripcion.Location = new System.Drawing.Point(180, 189);
+            this.tbDescripcion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbDescripcion.Location = new System.Drawing.Point(84, 269);
             this.tbDescripcion.Name = "tbDescripcion";
-            this.tbDescripcion.Size = new System.Drawing.Size(100, 20);
+            this.tbDescripcion.Size = new System.Drawing.Size(157, 23);
             this.tbDescripcion.TabIndex = 9;
+            this.tbDescripcion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEstado
             // 
-            this.tbEstado.Location = new System.Drawing.Point(522, 158);
+            this.tbEstado.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbEstado.Location = new System.Drawing.Point(312, 145);
             this.tbEstado.Name = "tbEstado";
-            this.tbEstado.Size = new System.Drawing.Size(100, 20);
+            this.tbEstado.Size = new System.Drawing.Size(157, 23);
             this.tbEstado.TabIndex = 10;
+            this.tbEstado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCaducidad
             // 
-            this.tbCaducidad.Location = new System.Drawing.Point(180, 251);
+            this.tbCaducidad.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbCaducidad.Location = new System.Drawing.Point(312, 208);
             this.tbCaducidad.Name = "tbCaducidad";
-            this.tbCaducidad.Size = new System.Drawing.Size(100, 20);
+            this.tbCaducidad.Size = new System.Drawing.Size(157, 23);
             this.tbCaducidad.TabIndex = 11;
+            this.tbCaducidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbObservaciones
             // 
-            this.tbObservaciones.Location = new System.Drawing.Point(541, 255);
+            this.tbObservaciones.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.tbObservaciones.Location = new System.Drawing.Point(312, 269);
             this.tbObservaciones.Name = "tbObservaciones";
-            this.tbObservaciones.Size = new System.Drawing.Size(100, 20);
+            this.tbObservaciones.Size = new System.Drawing.Size(157, 23);
             this.tbObservaciones.TabIndex = 12;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(191, 334);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "AGREGAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tbObservaciones.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(522, 334);
+            this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.button2.ForeColor = System.Drawing.Color.Transparent;
+            this.button2.Image = global::Proyecto.Properties.Resources.icons8_eliminar_filled_20;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button2.Location = new System.Drawing.Point(312, 308);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(116, 49);
             this.button2.TabIndex = 14;
             this.button2.Text = "SALIR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkCyan;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Image = global::Proyecto.Properties.Resources.icons8_libros_20;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.button1.Location = new System.Drawing.Point(125, 308);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 49);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "AGREGAR";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // pEjemplar
+            // 
+            this.pEjemplar.BackColor = System.Drawing.Color.Transparent;
+            this.pEjemplar.BackgroundImage = global::Proyecto.Properties.Resources._704059_1920_1200;
+            this.pEjemplar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pEjemplar.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pEjemplar.Controls.Add(this.lbEjemplar);
+            this.pEjemplar.Controls.Add(this.pBEjemplar);
+            this.pEjemplar.Location = new System.Drawing.Point(-1, 1);
+            this.pEjemplar.Name = "pEjemplar";
+            this.pEjemplar.Size = new System.Drawing.Size(555, 56);
+            this.pEjemplar.TabIndex = 60;
+            // 
+            // lbEjemplar
+            // 
+            this.lbEjemplar.AutoSize = true;
+            this.lbEjemplar.BackColor = System.Drawing.Color.Transparent;
+            this.lbEjemplar.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEjemplar.ForeColor = System.Drawing.Color.White;
+            this.lbEjemplar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbEjemplar.Location = new System.Drawing.Point(176, 6);
+            this.lbEjemplar.Name = "lbEjemplar";
+            this.lbEjemplar.Size = new System.Drawing.Size(204, 39);
+            this.lbEjemplar.TabIndex = 55;
+            this.lbEjemplar.Text = "EJEMPLARES";
+            this.lbEjemplar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // pBEjemplar
+            // 
+            this.pBEjemplar.Image = global::Proyecto.Properties.Resources.icons8_libros_50;
+            this.pBEjemplar.Location = new System.Drawing.Point(86, 3);
+            this.pBEjemplar.Name = "pBEjemplar";
+            this.pBEjemplar.Size = new System.Drawing.Size(46, 46);
+            this.pBEjemplar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pBEjemplar.TabIndex = 56;
+            this.pBEjemplar.TabStop = false;
             // 
             // EjemplaresForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::Proyecto.Properties.Resources.libross;
+            this.ClientSize = new System.Drawing.Size(554, 381);
+            this.Controls.Add(this.pEjemplar);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tbObservaciones);
@@ -172,14 +266,19 @@
             this.Controls.Add(this.tbDescripcion);
             this.Controls.Add(this.tbIsbnLibro);
             this.Controls.Add(this.tbId_ejemplar);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbCaducidad);
+            this.Controls.Add(this.lbObservaciones);
+            this.Controls.Add(this.lbDescripcion);
+            this.Controls.Add(this.lbEstado);
+            this.Controls.Add(this.lbIsbnL);
+            this.Controls.Add(this.lbId_ejemplar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EjemplaresForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EjemplaresForm";
+            this.pEjemplar.ResumeLayout(false);
+            this.pEjemplar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBEjemplar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -187,12 +286,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lbId_ejemplar;
+        private System.Windows.Forms.Label lbIsbnL;
+        private System.Windows.Forms.Label lbEstado;
+        private System.Windows.Forms.Label lbDescripcion;
+        private System.Windows.Forms.Label lbObservaciones;
+        private System.Windows.Forms.Label lbCaducidad;
         private System.Windows.Forms.TextBox tbId_ejemplar;
         private System.Windows.Forms.TextBox tbIsbnLibro;
         private System.Windows.Forms.TextBox tbDescripcion;
@@ -201,5 +300,8 @@
         private System.Windows.Forms.TextBox tbObservaciones;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel pEjemplar;
+        private System.Windows.Forms.Label lbEjemplar;
+        private System.Windows.Forms.PictureBox pBEjemplar;
     }
 }

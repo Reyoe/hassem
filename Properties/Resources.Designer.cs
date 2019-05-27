@@ -253,9 +253,29 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_libros_20 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-libros-20", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_libros_30 {
             get {
                 object obj = ResourceManager.GetObject("icons8-libros-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_libros_50 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-libros-50", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -466,6 +486,16 @@ namespace Proyecto.Properties {
         internal static System.Drawing.Bitmap komoLoZupo {
             get {
                 object obj = ResourceManager.GetObject("komoLoZupo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap libross {
+            get {
+                object obj = ResourceManager.GetObject("libross", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

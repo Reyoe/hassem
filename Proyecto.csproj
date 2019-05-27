@@ -151,6 +151,9 @@
     <EmbeddedResource Include="ClienteForm.resx">
       <DependentUpon>ClienteForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DevolucionForm.resx">
+      <DependentUpon>DevolucionForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EjemplaresForm.resx">
       <DependentUpon>EjemplaresForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -332,6 +335,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-trabajo-permanente-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-libros-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\libross.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-libros-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
