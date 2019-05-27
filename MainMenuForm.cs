@@ -37,15 +37,16 @@ namespace Proyecto
 
 		private void BtnUsuario_Click(object sender, EventArgs e)
 		{
-			label1.Text = "MODULO:USUARIO";
-			moduloActual = "USUARIO";
+            label1.Text = "MODULO:USUARIO";
+            moduloActual = "USUARIO";
             cbOp.Items.Clear();
-            string[] opc = new string[] { "Codigo", "Nombre_Usuario", "CURP", "Nombre", "Apellido", "Correo", "Colonia", "Calle","No_casa" };
+            string[] opc = new string[] { "Codigo", "Nombre_Usuario", "CURP", "Nombre", "Apellido", "Correo", "Colonia", "Calle", "No_casa" };
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
-            dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,administrador.curp,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+            dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+            dataGridView1.Columns[2].Visible = false;
         }
 
 		private void BtnLibro_Click(object sender, EventArgs e)
@@ -474,7 +475,1009 @@ namespace Proyecto
 
         private void TbCodigo_TextChanged(object sender, EventArgs e)
         {
+            CurrencyManager myCurrency = (CurrencyManager)BindingContext[dataGridView1.DataSource];
 
+            if (moduloActual == "USUARIO")
+            {
+                if (this.tbCodigo.Text.Length != 0)
+                {
+                    if (cbOp.SelectedIndex == 0)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[0].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 1)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[1].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                //MessageBox.Show(fila.Cells[2].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 2)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[3].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 3)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[4].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 4)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[5].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 5)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[6].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 6)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[7].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 7)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[8].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 8)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[9].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+
+                }
+            }
+            else if (moduloActual == "LIBRO")
+            {
+                if (this.tbCodigo.Text.Length != 0)
+                {
+                    if (cbOp.SelectedIndex == 0)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[0].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 1)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[1].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                //MessageBox.Show(fila.Cells[2].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 2)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[2].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 3)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[3].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 4)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[4].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 5)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[5].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 6)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[6].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 7)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[7].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 8)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[8].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    dataGridView1.DataSource = Conexion.query("SELECT * FROM LIBRO");
+                }
+            }
+            else if (moduloActual == "PERIODICO")
+            {
+                if (this.tbCodigo.Text.Length != 0)
+                {
+                    if (cbOp.SelectedIndex == 0)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[0].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 1)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[1].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                //MessageBox.Show(fila.Cells[2].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 2)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[3].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 3)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[4].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 4)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[5].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 5)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[6].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 6)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[7].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 7)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[8].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
+                }
+            }
+            else if (moduloActual == "REVISTA")
+            {
+                if (this.tbCodigo.Text.Length != 0)
+                {
+                    if (cbOp.SelectedIndex == 0)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[0].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 1)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[1].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                //MessageBox.Show(fila.Cells[2].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 2)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[3].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 3)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[4].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 4)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[5].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 5)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[6].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 6)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[7].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 7)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[8].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    dataGridView1.DataSource = Conexion.query("SELECT * FROM REVISTA");
+                }
+            }
+            else if (moduloActual == "VIDEO")
+            {
+                if (this.tbCodigo.Text.Length != 0)
+                {
+                    if (cbOp.SelectedIndex == 0)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[0].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 1)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[1].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                //MessageBox.Show(fila.Cells[2].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 2)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[2].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 3)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[3].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 4)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[4].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 5)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[5].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    dataGridView1.DataSource = Conexion.query("SELECT * FROM VIDEO");
+                }
+            }
+            else if (moduloActual == "CLIENTE")
+            {
+                if (this.tbCodigo.Text.Length != 0)
+                {
+                    if (cbOp.SelectedIndex == 0)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[0].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 1)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[1].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                //MessageBox.Show(fila.Cells[2].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 2)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[2].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 3)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[3].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 4)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[4].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 5)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[5].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                    else if (cbOp.SelectedIndex == 6)
+                    {
+                        foreach (DataGridViewRow fila in dataGridView1.Rows)
+                        {
+                            //MessageBox.Show(fila.Cells[0].RowIndex.ToString());
+                            if (fila.Cells[6].Value.ToString() != tbCodigo.Text)
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = false;
+                                myCurrency.ResumeBinding();
+                                // MessageBox.Show(fila.Cells[0].Value.ToString(),tbCodigo.Text);
+                            }
+                            else
+                            {
+                                myCurrency.SuspendBinding();
+                                fila.Visible = true;
+                                myCurrency.ResumeBinding();
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    dataGridView1.DataSource = Conexion.query("SELECT * FROM CLIENTE");
+                }
+            }
         }
 
         private void BtnEjemplar_Click(object sender, EventArgs e)
