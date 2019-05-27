@@ -71,10 +71,15 @@ namespace Proyecto
             if (this.metodo == "modificar")
             {
                 myPeriodico.updatePeriodico(this.id, tbEditorial.Text, tbNo_paginas.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text, tbCantidad.Text, tbSecciones.Text);
+                MessageBox.Show("Periodico Modificado con exito");
+
             }
             else {
                 myPeriodico.insertPeriodico(tbEditorial.Text, tbNo_paginas.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text, tbCantidad.Text, tbSecciones.Text);
+                MessageBox.Show("Periodico agregado con exito");
+
             }
+
         }
 
         private void BSalir_Click(object sender, EventArgs e)

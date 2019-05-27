@@ -67,6 +67,7 @@ namespace Proyecto
             if (this.metodo == "modificar")
             {
                 myVideo.updateVideo(this.id,tbEditorial.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text);
+
             }
             else
             {

@@ -67,10 +67,12 @@ namespace Proyecto
             if (this.metodo == "modificar")
             {
                 myRevista.updateRevista(this.id, tbEditorial.Text, tbNo_paginas.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text, tbCantidad.Text);
+                MessageBox.Show("Revista Modificada con exito");
             }
             else
             {
                 myRevista.insertRevista(tbEditorial.Text, tbNo_paginas.Text, tbNombre_autor.Text, tbApellido.Text, tbTitulo.Text, tbAño.Text, tbCantidad.Text);
+                MessageBox.Show("Revista agregada con exito");
             }
 		}
 
