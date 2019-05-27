@@ -9,12 +9,12 @@ namespace Proyecto
 	public static class Conexion
 	{
 		static MySqlConnection con;
-		static MySqlCommand comando = new MySqlCommand();
+		//static MySqlCommand comando = new MySqlCommand();
 		public static string servidor;
 		static string usuario;
 		static string password;
 		static string bd;
-		static string puerto;
+		//static string puerto;
 		static string cadenadeconexion = "";
 
 		static public void crearConexionLocal()
