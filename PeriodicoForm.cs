@@ -18,6 +18,7 @@ namespace Proyecto
 		{
 			myPeriodico = new Periodico();
 			InitializeComponent();
+            lbNPeriodico.Text = "NUEVO PERIODICO";
 		}
         public PeriodicoForm(string id, string editorial, string paginas, string nombre, string apellido, string titulo, string año, string cantidad, string secciones,string metodo)
         {
@@ -46,9 +47,11 @@ namespace Proyecto
                 tbCantidad.Enabled = false;
                 tbSecciones.Enabled = false;
                 BAgregar_Periodico.Enabled = false;
+                lbNPeriodico.Text = "DETALLES DEL PERIODICO";
             }
             if (metodo == "modificar")
             {
+                lbNPeriodico.Text = "MODIFICAR PERIODICO";
                 tbEditorial.Text = editorial;
                 tbNo_paginas.Text = paginas;
                 tbNombre_autor.Text = nombre;

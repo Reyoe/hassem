@@ -62,6 +62,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrador.cs" />
+    <Compile Include="DevolucionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DevolucionForm.Designer.cs">
+      <DependentUpon>DevolucionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EjemplaresForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EjemplaresForm.Designer.cs">
+      <DependentUpon>EjemplaresForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LibroForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +87,12 @@
     </Compile>
     <Compile Include="PeriodicoForm.Designer.cs">
       <DependentUpon>PeriodicoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrestamoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrestamoForm.Designer.cs">
+      <DependentUpon>PrestamoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -132,6 +150,9 @@
   <ItemGroup>
     <EmbeddedResource Include="ClienteForm.resx">
       <DependentUpon>ClienteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EjemplaresForm.resx">
+      <DependentUpon>EjemplaresForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LibroForm.resx">
       <DependentUpon>LibroForm.cs</DependentUpon>

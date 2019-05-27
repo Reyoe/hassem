@@ -18,6 +18,7 @@ namespace Proyecto
 		{
 			myVideo = new Video();
 			InitializeComponent();
+            lBNVideo.Text = "NUEVO VIDEO";
 		}
         public VideoForm(string id,string editorial, string nombre, string apellido, string titulo, string año, string metodo)
         {
@@ -25,6 +26,7 @@ namespace Proyecto
             this.id = id;
             if (metodo == "mostrar")
             {
+                lBNVideo.Text = "DETALLES DEL VIDEO";
                 myVideo = new Video();
                 InitializeComponent();
                 tbEditorial.Text = editorial;
@@ -42,6 +44,7 @@ namespace Proyecto
             }
             if (metodo == "modificar")
             {
+                lBNVideo.Text = "MODIFICAR VIDEO";
                 myVideo = new Video();
                 InitializeComponent();
                 tbEditorial.Text = editorial;

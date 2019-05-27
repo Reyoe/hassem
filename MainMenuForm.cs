@@ -42,7 +42,7 @@ namespace Proyecto
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
 
-            dataGridView1.DataSource = Conexion.query("SELECT usuario.nombre_usuario,admistrator.nombre FROM usuario INNER JOIN  ON  administrator.codigo_usuario = usuario.codigo;");
+            dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,administrador.curp,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
         }
 
 		private void BtnLibro_Click(object sender, EventArgs e)
@@ -53,8 +53,8 @@ namespace Proyecto
             string[] opc = new string[] { "Isbn", "Edicion", "Editorial", "No_paginas", "Nombre_Autor", "Apellido_autor","Titulo","Año", "Cantidad"};
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
-            btnDevolucion.Enabled = true;
-            btnPrestamo.Enabled = true;
+            btnDevolucion.Enabled = false;
+            btnPrestamo.Enabled = false;
 
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM LIBRO");
@@ -258,6 +258,22 @@ namespace Proyecto
         {
             if (moduloActual == "USUARIO")
             {
+                Usuario u = new Usuario();
+                Administrador a = new Administrador();
+                if (dataGridView1.SelectedRows.Count > 0)
+                {
+                    a.deleteAdministrador(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    u.deleteUsuario(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                    MessageBox.Show("Usuario y administrador eliminado con exito");
+
+                }
+                else
+                {
+                    MessageBox.Show("No exixten usuarios");
+
+                }
+                dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,administrador.curp,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+
             }
             else if (moduloActual == "CLIENTE")
             {

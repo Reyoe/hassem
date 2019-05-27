@@ -28,6 +28,12 @@ namespace Proyecto
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
+        public void deleteUsuario(string codigo)
+        {
+            string query = "DELETE FROM usuario WHERE codigo='" + codigo + "';";
+            Console.WriteLine(query);
+            Conexion.query(query); ;
+        }
 
     }
 }

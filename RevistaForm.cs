@@ -18,6 +18,7 @@ namespace Proyecto
 		{
 			myRevista = new Revista();
 			InitializeComponent();
+            lbNRevista.Text = "NUEVA REVISTA";
 		}
         public RevistaForm(string id,string editorial, string paginas, string nombre, string apellido, string titulo, string año, string cantidad, string metodo)
         {
@@ -27,6 +28,7 @@ namespace Proyecto
             InitializeComponent();
             if (metodo == "mostrar")
             {
+                lbNRevista.Text = "DETALLES DE LA REVISTA";
                 tbEditorial.Text = editorial;
                 tbNo_paginas.Text = paginas;
                 tbNombre_autor.Text = nombre;
@@ -46,6 +48,7 @@ namespace Proyecto
             }
             if (metodo == "modificar")
             {
+                lbNRevista.Text = "MODIFICAR REVISTA";
                 tbEditorial.Text = editorial;
                 tbNo_paginas.Text = paginas;
                 tbNombre_autor.Text = nombre;

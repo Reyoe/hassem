@@ -19,6 +19,7 @@ namespace Proyecto
             metodo = "agregar";
 			myLibro = new Libro();
 			InitializeComponent();
+            lbNLibro.Text = "NUEVO LIBRO";
 		}
         public LibroForm(string isbn, string edicion, string editorial, string paginas, string nombre, string apellido, string titulo, string año, string cantidad,string metodo)
         {
@@ -28,6 +29,7 @@ namespace Proyecto
 
             if (metodo == "mostrar")
             {
+                lbNLibro.Text = "DETALLES DEL LIBRO";
                 tbISBN.Text = isbn;
                 tbEdicion.Text = edicion;
                 tbEditorial.Text = editorial;
@@ -51,6 +53,7 @@ namespace Proyecto
             }
             if (metodo == "modificar")
             {
+                lbNLibro.Text = "MODIFICAR LIBRO";
                 tbISBN.Text = isbn;
                 tbEdicion.Text = edicion;
                 tbEditorial.Text = editorial;

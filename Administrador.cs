@@ -14,5 +14,11 @@ namespace Proyecto
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
+        public void deleteAdministrador(string codigo)
+        {
+            string query = "DELETE FROM administrador WHERE codigo_usuario='" + codigo + "';";
+            Console.WriteLine(query);
+            Conexion.query(query); ;
+        }
     }
 }
