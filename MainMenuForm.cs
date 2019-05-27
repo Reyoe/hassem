@@ -148,11 +148,20 @@ namespace Proyecto
 
         private void BtnVer_Click(object sender, EventArgs e)
         {
-            string curp, nombre, apellido, correo, colonia, calle, no, isbn, edicion, id, editorial, paginas, titulo, año,cantidad,secciones;
+            string curp, nombre, apellido, correo, colonia, calle, no, isbn, edicion, id, editorial, paginas, titulo, año,cantidad,secciones,codigo,nombre_usuario,contra;
             if (moduloActual == "USUARIO")
             {
-              // DataTable us = us.(textUser.Text, textPassword.Text);
-                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp();
+                codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                nombre_usuario = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                contra = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                curp = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                nombre = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                apellido = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                correo = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                colonia = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                calle = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                no = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp(codigo,nombre_usuario,contra,curp,nombre,apellido,correo,colonia,calle,no,"mostrar");
                 myusuarioAdOp.ShowDialog();
             }
             else if (moduloActual == "CLIENTE")
@@ -362,9 +371,21 @@ namespace Proyecto
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            string curp, nombre, apellido, correo, colonia, calle, no, isbn, edicion, id, editorial, paginas, titulo, año, cantidad, secciones;
+            string codigo, nombre_usuario, contra,curp, nombre, apellido, correo, colonia, calle, no, isbn, edicion, id, editorial, paginas, titulo, año, cantidad, secciones;
             if (moduloActual == "USUARIO")
             {
+                codigo = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                nombre_usuario = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
+                contra = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
+                curp = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                nombre = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
+                apellido = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
+                correo = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
+                colonia = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+                calle = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
+                no = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
+                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp(codigo, nombre_usuario, contra, curp, nombre, apellido, correo, colonia, calle, no, "modificar");
+                myusuarioAdOp.ShowDialog();
             }
             else if (moduloActual == "CLIENTE")
             {

@@ -34,6 +34,12 @@ namespace Proyecto
             Console.WriteLine(query);
             Conexion.query(query); ;
         }
+        public void updateUsuario(string codigo, string nombre, string contrasenia)
+        {
+            string query = "UPDATE usuario SET nombre_usuario='" + nombre + "' , contrasenia= '" + contrasenia + "' WHERE codigo='"+codigo+"';";
+            Console.WriteLine(query);
+            Conexion.query(query); ;
+        }
 
     }
 }
