@@ -49,6 +49,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbCodigo = new System.Windows.Forms.TextBox();
             this.cbOp = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -366,6 +367,7 @@
             this.dataGridView1.GridColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.dataGridView1.Location = new System.Drawing.Point(223, 162);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(590, 309);
@@ -390,6 +392,18 @@
             this.cbOp.Size = new System.Drawing.Size(121, 25);
             this.cbOp.TabIndex = 4;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Administrador",
+            "Operador"});
+            this.comboBox1.Location = new System.Drawing.Point(308, 121);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 5;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.ComboBox1_SelectedIndexChanged);
+            // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -398,6 +412,7 @@
             this.BackgroundImage = global::Proyecto.Properties.Resources.índice;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(848, 566);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.cbOp);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.dataGridView1);
@@ -436,5 +451,6 @@
         private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.ComboBox cbOp;
         private System.Windows.Forms.Button btnEjemplar;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

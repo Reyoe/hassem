@@ -19,12 +19,12 @@ namespace Proyecto
             metodo = "INSERTAR";
             cbTipo.SelectedIndex=0;
         }
-        public UsuarioAdOp(string codigo,string nombre_usuario, string contrasenia, string curp, string nombre, string apellido, string correo, string colonia, string calle, string no_casa,string metodo)
+        public UsuarioAdOp(string codigo,string nombre_usuario, string contrasenia, string curp, string nombre, string apellido, string correo, string colonia, string calle, string no_casa,string metodo,int tipo)
         {
             InitializeComponent();
             this.metodo = metodo;
             
-            cbTipo.SelectedIndex = 0;
+            cbTipo.SelectedIndex = tipo;
             if (metodo == "mostrar")
             {
                 lbNUsuario.Text = "DETALLES USUARIO";
@@ -104,7 +104,16 @@ namespace Proyecto
             else if (this.metodo == "modificar")
             {
                 U.updateUsuario(tbCodigo.Text, tbNombreUsuario.Text, tbContra.Text);
-                a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
+                if (cbTipo.SelectedIndex == 0)
+                {
+                    a.updateAdministrador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
+
+                }
+                if (cbTipo.SelectedIndex == 1)
+                {
+                    o.updateOperador(tbCurp.Text, tbNombre.Text, tbApellido.Text, tbCorreo.Text, tbColonia.Text, tbCalle.Text, tbNoCasa.Text, tbCodigo.Text);
+
+                }
             }
         }
 

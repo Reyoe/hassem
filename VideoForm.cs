@@ -26,9 +26,10 @@ namespace Proyecto
             this.id = id;
             if (metodo == "mostrar")
             {
-                lBNVideo.Text = "DETALLES DEL VIDEO";
+                
                 myVideo = new Video();
                 InitializeComponent();
+                lBNVideo.Text = "DETALLES DEL VIDEO";
                 tbEditorial.Text = editorial;
                 tbNombre_autor.Text = nombre;
                 tbApellido.Text = apellido;
@@ -40,13 +41,15 @@ namespace Proyecto
                 tbApellido.Enabled = false;
                 tbTitulo.Enabled = false;
                 tbAño.Enabled = false;
+                tbCantidad.Enabled = false;
                 BAgregar_Video.Enabled = false;
             }
             if (metodo == "modificar")
             {
-                lBNVideo.Text = "MODIFICAR VIDEO";
+                
                 myVideo = new Video();
                 InitializeComponent();
+                lBNVideo.Text = "MODIFICAR VIDEO";
                 tbEditorial.Text = editorial;
                 tbNombre_autor.Text = nombre;
                 tbApellido.Text = apellido;

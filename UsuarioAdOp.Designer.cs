@@ -103,7 +103,7 @@
             this.cbTipo.Location = new System.Drawing.Point(500, 248);
             this.cbTipo.Name = "cbTipo";
             this.cbTipo.Size = new System.Drawing.Size(157, 25);
-            this.cbTipo.TabIndex = 3;
+            this.cbTipo.TabIndex = 11;
             // 
             // label4
             // 
@@ -211,7 +211,7 @@
             this.tbCodigo.Location = new System.Drawing.Point(69, 145);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(157, 23);
-            this.tbCodigo.TabIndex = 13;
+            this.tbCodigo.TabIndex = 1;
             this.tbCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNombreUsuario
@@ -220,7 +220,7 @@
             this.tbNombreUsuario.Location = new System.Drawing.Point(500, 145);
             this.tbNombreUsuario.Name = "tbNombreUsuario";
             this.tbNombreUsuario.Size = new System.Drawing.Size(157, 23);
-            this.tbNombreUsuario.TabIndex = 14;
+            this.tbNombreUsuario.TabIndex = 9;
             this.tbNombreUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbContra
@@ -229,7 +229,7 @@
             this.tbContra.Location = new System.Drawing.Point(500, 195);
             this.tbContra.Name = "tbContra";
             this.tbContra.Size = new System.Drawing.Size(157, 23);
-            this.tbContra.TabIndex = 15;
+            this.tbContra.TabIndex = 10;
             this.tbContra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCurp
@@ -238,7 +238,7 @@
             this.tbCurp.Location = new System.Drawing.Point(69, 195);
             this.tbCurp.Name = "tbCurp";
             this.tbCurp.Size = new System.Drawing.Size(157, 23);
-            this.tbCurp.TabIndex = 16;
+            this.tbCurp.TabIndex = 2;
             this.tbCurp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNombre
@@ -247,7 +247,7 @@
             this.tbNombre.Location = new System.Drawing.Point(69, 248);
             this.tbNombre.Name = "tbNombre";
             this.tbNombre.Size = new System.Drawing.Size(157, 23);
-            this.tbNombre.TabIndex = 17;
+            this.tbNombre.TabIndex = 3;
             this.tbNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbApellido
@@ -256,7 +256,7 @@
             this.tbApellido.Location = new System.Drawing.Point(69, 298);
             this.tbApellido.Name = "tbApellido";
             this.tbApellido.Size = new System.Drawing.Size(157, 23);
-            this.tbApellido.TabIndex = 18;
+            this.tbApellido.TabIndex = 4;
             // 
             // tbCorreo
             // 
@@ -264,7 +264,7 @@
             this.tbCorreo.Location = new System.Drawing.Point(279, 145);
             this.tbCorreo.Name = "tbCorreo";
             this.tbCorreo.Size = new System.Drawing.Size(157, 23);
-            this.tbCorreo.TabIndex = 19;
+            this.tbCorreo.TabIndex = 5;
             this.tbCorreo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbColonia
@@ -273,7 +273,7 @@
             this.tbColonia.Location = new System.Drawing.Point(279, 298);
             this.tbColonia.Name = "tbColonia";
             this.tbColonia.Size = new System.Drawing.Size(157, 23);
-            this.tbColonia.TabIndex = 20;
+            this.tbColonia.TabIndex = 8;
             this.tbColonia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCalle
@@ -282,7 +282,7 @@
             this.tbCalle.Location = new System.Drawing.Point(279, 248);
             this.tbCalle.Name = "tbCalle";
             this.tbCalle.Size = new System.Drawing.Size(157, 23);
-            this.tbCalle.TabIndex = 21;
+            this.tbCalle.TabIndex = 7;
             this.tbCalle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNoCasa
@@ -291,7 +291,7 @@
             this.tbNoCasa.Location = new System.Drawing.Point(279, 195);
             this.tbNoCasa.Name = "tbNoCasa";
             this.tbNoCasa.Size = new System.Drawing.Size(157, 23);
-            this.tbNoCasa.TabIndex = 22;
+            this.tbNoCasa.TabIndex = 6;
             this.tbNoCasa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btAgregarU
@@ -308,7 +308,7 @@
             this.btAgregarU.Location = new System.Drawing.Point(184, 345);
             this.btAgregarU.Name = "btAgregarU";
             this.btAgregarU.Size = new System.Drawing.Size(116, 49);
-            this.btAgregarU.TabIndex = 23;
+            this.btAgregarU.TabIndex = 12;
             this.btAgregarU.Text = "AGREGAR";
             this.btAgregarU.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btAgregarU.UseVisualStyleBackColor = false;
@@ -328,7 +328,7 @@
             this.btnSalirU.Location = new System.Drawing.Point(456, 345);
             this.btnSalirU.Name = "btnSalirU";
             this.btnSalirU.Size = new System.Drawing.Size(116, 49);
-            this.btnSalirU.TabIndex = 24;
+            this.btnSalirU.TabIndex = 13;
             this.btnSalirU.Text = "SALIR";
             this.btnSalirU.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalirU.UseVisualStyleBackColor = false;

@@ -13,14 +13,17 @@ namespace Proyecto
 {
 	public partial class MainMenuForm : Form
 	{
+        int tipo;
         Libro myLibro= new Libro();
         string moduloActual = "USUARIO";
 		public MainMenuForm()
 		{
 			InitializeComponent();
-		}
-        
-        
+            
+
+        }
+
+
         private void BtnPeriodico_Click(object sender, EventArgs e)
 		{
 			label1.Text = "MODULO:PERIODICO";
@@ -31,6 +34,7 @@ namespace Proyecto
             cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
+            comboBox1.Visible = false;
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
         }
@@ -43,10 +47,22 @@ namespace Proyecto
             string[] opc = new string[] { "Codigo", "Nombre_Usuario", "CURP", "Nombre", "Apellido", "Correo", "Colonia", "Calle", "No_casa" };
             cbOp.Items.AddRange(opc);
             cbOp.SelectedIndex = 0;
+            comboBox1.Visible = true;
+            
+            comboBox1.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
-            dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
-            dataGridView1.Columns[2].Visible = false;
+            if (comboBox1.SelectedIndex == 0)
+            {
+                dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+                dataGridView1.Columns[2].Visible = false;
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,operador.curp,operador.nombre,operador.apellido, operador.correo,operador.colonia,operador.calle, operador.no_casa FROM usuario INNER JOIN operador WHERE usuario.codigo = operador.codigo_usuario;");
+                dataGridView1.Columns[2].Visible = false;
+            }
+
         }
 
 		private void BtnLibro_Click(object sender, EventArgs e)
@@ -59,7 +75,7 @@ namespace Proyecto
             cbOp.SelectedIndex = 0;
             btnDevolucion.Enabled = false;
             btnPrestamo.Enabled = false;
-
+            comboBox1.Visible = false;
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM LIBRO");
 		}
@@ -74,6 +90,7 @@ namespace Proyecto
             cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
+            comboBox1.Visible = false;
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM REVISTA");
 		}
@@ -88,6 +105,7 @@ namespace Proyecto
             cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
+            comboBox1.Visible = false;
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM VIDEO");
 		}
@@ -142,6 +160,7 @@ namespace Proyecto
             cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
+            comboBox1.Visible = false;
 
             dataGridView1.DataSource = Conexion.query("SELECT * FROM CLIENTE");
 		}
@@ -161,7 +180,7 @@ namespace Proyecto
                 colonia = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
                 calle = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
                 no = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp(codigo,nombre_usuario,contra,curp,nombre,apellido,correo,colonia,calle,no,"mostrar");
+                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp(codigo,nombre_usuario,contra,curp,nombre,apellido,correo,colonia,calle,no,"mostrar",comboBox1.SelectedIndex);
                 myusuarioAdOp.ShowDialog();
             }
             else if (moduloActual == "CLIENTE")
@@ -273,12 +292,21 @@ namespace Proyecto
             {
                 Usuario u = new Usuario();
                 Administrador a = new Administrador();
+                Operador o = new Operador();
                 if (dataGridView1.SelectedRows.Count > 0)
                 {
-                    a.deleteAdministrador(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                    u.deleteUsuario(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-                    MessageBox.Show("Usuario y administrador eliminado con exito");
-
+                    if (comboBox1.SelectedIndex == 0)
+                    {
+                        a.deleteAdministrador(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                        u.deleteUsuario(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                        MessageBox.Show("Usuario y administrador eliminado con exito");
+                    }
+                    else if (comboBox1.SelectedIndex == 1)
+                    {
+                        o.deleteOperador(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                        u.deleteUsuario(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                        MessageBox.Show("Usuario y administrador eliminado con exito");
+                    }
                 }
                 else
                 {
@@ -384,7 +412,7 @@ namespace Proyecto
                 colonia = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
                 calle = dataGridView1.SelectedRows[0].Cells[8].Value.ToString();
                 no = dataGridView1.SelectedRows[0].Cells[9].Value.ToString();
-                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp(codigo, nombre_usuario, contra, curp, nombre, apellido, correo, colonia, calle, no, "modificar");
+                UsuarioAdOp myusuarioAdOp = new UsuarioAdOp(codigo, nombre_usuario, contra, curp, nombre, apellido, correo, colonia, calle, no, "modificar",comboBox1.SelectedIndex);
                 myusuarioAdOp.ShowDialog();
             }
             else if (moduloActual == "CLIENTE")
@@ -685,8 +713,15 @@ namespace Proyecto
                 }
                 else
                 {
-                    dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+                    if (comboBox1.SelectedIndex == 0)
+                    {
+                        dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+                    }
+                    else if (comboBox1.SelectedIndex == 1)
+                    {
+                        dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,operador.curp,operador.nombre,operador.apellido, operador.correo,operador.colonia,operador.calle, operador.no_casa FROM usuario INNER JOIN operador WHERE usuario.codigo = operador.codigo_usuario;");
 
+                    }
                 }
             }
             else if (moduloActual == "LIBRO")
@@ -1513,6 +1548,20 @@ namespace Proyecto
             btnPrestamo.Enabled = true;
             btnDevolucion.Enabled = true;
             dataGridView1.DataSource = Conexion.query("SELECT * FROM EJEMPLAR");
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,administrador.curp,administrador.nombre,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
+                dataGridView1.Columns[2].Visible = false;
+            }
+            else if (comboBox1.SelectedIndex == 1)
+            {
+                dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,usuario.contrasenia,operador.curp,operador.nombre,operador.apellido, operador.correo,operador.colonia,operador.calle, operador.no_casa FROM usuario INNER JOIN operador WHERE usuario.codigo = operador.codigo_usuario;");
+                dataGridView1.Columns[2].Visible = false;
+            }
         }
     }
 }

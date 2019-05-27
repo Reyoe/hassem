@@ -65,7 +65,7 @@
             this.BAgregar_Revista.Location = new System.Drawing.Point(348, 304);
             this.BAgregar_Revista.Name = "BAgregar_Revista";
             this.BAgregar_Revista.Size = new System.Drawing.Size(116, 49);
-            this.BAgregar_Revista.TabIndex = 37;
+            this.BAgregar_Revista.TabIndex = 8;
             this.BAgregar_Revista.Text = "AGREGAR";
             this.BAgregar_Revista.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BAgregar_Revista.UseVisualStyleBackColor = false;
@@ -77,7 +77,7 @@
             this.tbApellido.Location = new System.Drawing.Point(348, 188);
             this.tbApellido.Name = "tbApellido";
             this.tbApellido.Size = new System.Drawing.Size(157, 23);
-            this.tbApellido.TabIndex = 36;
+            this.tbApellido.TabIndex = 6;
             this.tbApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbAño
@@ -86,7 +86,7 @@
             this.tbAño.Location = new System.Drawing.Point(85, 304);
             this.tbAño.Name = "tbAño";
             this.tbAño.Size = new System.Drawing.Size(157, 23);
-            this.tbAño.TabIndex = 35;
+            this.tbAño.TabIndex = 4;
             this.tbAño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbEditorial
@@ -95,7 +95,7 @@
             this.tbEditorial.Location = new System.Drawing.Point(85, 185);
             this.tbEditorial.Name = "tbEditorial";
             this.tbEditorial.Size = new System.Drawing.Size(157, 23);
-            this.tbEditorial.TabIndex = 32;
+            this.tbEditorial.TabIndex = 2;
             this.tbEditorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbCantidad
@@ -104,7 +104,7 @@
             this.tbCantidad.Location = new System.Drawing.Point(348, 245);
             this.tbCantidad.Name = "tbCantidad";
             this.tbCantidad.Size = new System.Drawing.Size(157, 23);
-            this.tbCantidad.TabIndex = 31;
+            this.tbCantidad.TabIndex = 7;
             this.tbCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNo_paginas
@@ -113,7 +113,7 @@
             this.tbNo_paginas.Location = new System.Drawing.Point(85, 245);
             this.tbNo_paginas.Name = "tbNo_paginas";
             this.tbNo_paginas.Size = new System.Drawing.Size(157, 23);
-            this.tbNo_paginas.TabIndex = 30;
+            this.tbNo_paginas.TabIndex = 3;
             this.tbNo_paginas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbTitulo
@@ -122,7 +122,7 @@
             this.tbTitulo.Location = new System.Drawing.Point(85, 127);
             this.tbTitulo.Name = "tbTitulo";
             this.tbTitulo.Size = new System.Drawing.Size(157, 23);
-            this.tbTitulo.TabIndex = 29;
+            this.tbTitulo.TabIndex = 1;
             this.tbTitulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tbNombre_autor
@@ -131,7 +131,7 @@
             this.tbNombre_autor.Location = new System.Drawing.Point(348, 127);
             this.tbNombre_autor.Name = "tbNombre_autor";
             this.tbNombre_autor.Size = new System.Drawing.Size(157, 23);
-            this.tbNombre_autor.TabIndex = 28;
+            this.tbNombre_autor.TabIndex = 5;
             this.tbNombre_autor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
@@ -232,7 +232,7 @@
             this.BSalir.Location = new System.Drawing.Point(472, 304);
             this.BSalir.Name = "BSalir";
             this.BSalir.Size = new System.Drawing.Size(116, 49);
-            this.BSalir.TabIndex = 38;
+            this.BSalir.TabIndex = 9;
             this.BSalir.Text = "SALIR";
             this.BSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BSalir.UseVisualStyleBackColor = false;

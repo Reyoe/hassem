@@ -178,7 +178,7 @@
             this.tbNombre_autor.Location = new System.Drawing.Point(378, 134);
             this.tbNombre_autor.Name = "tbNombre_autor";
             this.tbNombre_autor.Size = new System.Drawing.Size(157, 23);
-            this.tbNombre_autor.TabIndex = 9;
+            this.tbNombre_autor.TabIndex = 6;
             this.tbNombre_autor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbNombre_autor.TextChanged += new System.EventHandler(this.TbNombre_autor_TextChanged);
             // 
@@ -188,7 +188,7 @@
             this.tbTitulo.Location = new System.Drawing.Point(122, 201);
             this.tbTitulo.Name = "tbTitulo";
             this.tbTitulo.Size = new System.Drawing.Size(157, 23);
-            this.tbTitulo.TabIndex = 10;
+            this.tbTitulo.TabIndex = 2;
             this.tbTitulo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbTitulo.TextChanged += new System.EventHandler(this.TbTitulo_TextChanged);
             // 
@@ -198,7 +198,7 @@
             this.tbNo_paginas.Location = new System.Drawing.Point(380, 261);
             this.tbNo_paginas.Name = "tbNo_paginas";
             this.tbNo_paginas.Size = new System.Drawing.Size(157, 23);
-            this.tbNo_paginas.TabIndex = 11;
+            this.tbNo_paginas.TabIndex = 8;
             this.tbNo_paginas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbNo_paginas.TextChanged += new System.EventHandler(this.TbNo_paginas_TextChanged);
             // 
@@ -208,7 +208,7 @@
             this.tbCantidad.Location = new System.Drawing.Point(378, 327);
             this.tbCantidad.Name = "tbCantidad";
             this.tbCantidad.Size = new System.Drawing.Size(157, 23);
-            this.tbCantidad.TabIndex = 12;
+            this.tbCantidad.TabIndex = 9;
             this.tbCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbCantidad.TextChanged += new System.EventHandler(this.TbCantidad_TextChanged);
             // 
@@ -218,7 +218,7 @@
             this.tbEditorial.Location = new System.Drawing.Point(122, 261);
             this.tbEditorial.Name = "tbEditorial";
             this.tbEditorial.Size = new System.Drawing.Size(157, 23);
-            this.tbEditorial.TabIndex = 13;
+            this.tbEditorial.TabIndex = 3;
             this.tbEditorial.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbEditorial.TextChanged += new System.EventHandler(this.TbEditorial_TextChanged);
             // 
@@ -228,7 +228,7 @@
             this.tbEdicion.Location = new System.Drawing.Point(122, 327);
             this.tbEdicion.Name = "tbEdicion";
             this.tbEdicion.Size = new System.Drawing.Size(157, 23);
-            this.tbEdicion.TabIndex = 14;
+            this.tbEdicion.TabIndex = 4;
             this.tbEdicion.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbEdicion.TextChanged += new System.EventHandler(this.TbEdicion_TextChanged);
             // 
@@ -238,7 +238,7 @@
             this.tbISBN.Location = new System.Drawing.Point(122, 137);
             this.tbISBN.Name = "tbISBN";
             this.tbISBN.Size = new System.Drawing.Size(157, 23);
-            this.tbISBN.TabIndex = 15;
+            this.tbISBN.TabIndex = 1;
             this.tbISBN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbISBN.TextChanged += new System.EventHandler(this.TbISBN_TextChanged);
             // 
@@ -248,7 +248,7 @@
             this.tbAño.Location = new System.Drawing.Point(122, 389);
             this.tbAño.Name = "tbAño";
             this.tbAño.Size = new System.Drawing.Size(157, 23);
-            this.tbAño.TabIndex = 16;
+            this.tbAño.TabIndex = 5;
             this.tbAño.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbAño.TextChanged += new System.EventHandler(this.TbAño_TextChanged);
             // 
@@ -258,7 +258,7 @@
             this.tbApellido.Location = new System.Drawing.Point(378, 201);
             this.tbApellido.Name = "tbApellido";
             this.tbApellido.Size = new System.Drawing.Size(157, 23);
-            this.tbApellido.TabIndex = 17;
+            this.tbApellido.TabIndex = 7;
             this.tbApellido.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.tbApellido.TextChanged += new System.EventHandler(this.TbApellido_TextChanged);
             // 
@@ -277,7 +277,7 @@
             this.BAgregar_libro.Location = new System.Drawing.Point(381, 363);
             this.BAgregar_libro.Name = "BAgregar_libro";
             this.BAgregar_libro.Size = new System.Drawing.Size(116, 49);
-            this.BAgregar_libro.TabIndex = 18;
+            this.BAgregar_libro.TabIndex = 10;
             this.BAgregar_libro.Text = "AGREGAR";
             this.BAgregar_libro.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BAgregar_libro.UseVisualStyleBackColor = false;
@@ -298,7 +298,7 @@
             this.BSalir.Location = new System.Drawing.Point(527, 363);
             this.BSalir.Name = "BSalir";
             this.BSalir.Size = new System.Drawing.Size(116, 49);
-            this.BSalir.TabIndex = 19;
+            this.BSalir.TabIndex = 11;
             this.BSalir.Text = "SALIR";
             this.BSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.BSalir.UseVisualStyleBackColor = false;
