@@ -157,6 +157,7 @@
             // BAgregar_Video
             // 
             this.BAgregar_Video.BackColor = System.Drawing.Color.DarkCyan;
+            this.BAgregar_Video.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BAgregar_Video.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.BAgregar_Video.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.BAgregar_Video.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -177,6 +178,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Maroon;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

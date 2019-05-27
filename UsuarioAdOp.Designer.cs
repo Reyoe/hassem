@@ -297,6 +297,7 @@
             // btAgregarU
             // 
             this.btAgregarU.BackColor = System.Drawing.Color.DarkCyan;
+            this.btAgregarU.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btAgregarU.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DodgerBlue;
             this.btAgregarU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btAgregarU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -316,6 +317,7 @@
             // btnSalirU
             // 
             this.btnSalirU.BackColor = System.Drawing.Color.Maroon;
+            this.btnSalirU.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSalirU.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btnSalirU.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnSalirU.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
