@@ -74,6 +74,7 @@ namespace Proyecto
             }
 		}
 
+
         private void BSalir_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -348,5 +348,11 @@
   <ItemGroup>
     <None Include="Resources\icons8-libros-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-libreta-de-ahorros-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-libreta-de-ahorros-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
