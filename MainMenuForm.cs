@@ -31,17 +31,20 @@ namespace Proyecto
             cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
-            
-			dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
-		}
+
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM PERIODICO");
+        }
 
 		private void BtnUsuario_Click(object sender, EventArgs e)
 		{
 			label1.Text = "MODULO:USUARIO";
 			moduloActual = "USUARIO";
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "Codigo", "Nombre_Usuario", "CURP", "Nombre", "Apellido", "Correo", "Colonia", "Calle","No_casa" };
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
             btnPrestamo.Enabled = false;
             btnDevolucion.Enabled = false;
-
             dataGridView1.DataSource = Conexion.query("SELECT usuario.codigo, usuario.nombre_usuario,administrador.curp,administrador.apellido, administrador.correo,administrador.colonia,administrador.calle, administrador.no_casa FROM usuario INNER JOIN administrador WHERE usuario.codigo = administrador.codigo_usuario;");
         }
 
@@ -471,7 +474,21 @@ namespace Proyecto
 
         private void TbCodigo_TextChanged(object sender, EventArgs e)
         {
-          
+
+        }
+
+        private void BtnEjemplar_Click(object sender, EventArgs e)
+        {
+            label1.Text = "MODULO:EJEMPLAR";
+            moduloActual = "EJEMPLAR";
+            cbOp.Items.Clear();
+            string[] opc = new string[] { "id_ejemplar","isbn_libro" ,"descripcion","estado","observaciones","caducidad","status" };
+            cbOp.Items.AddRange(opc);
+            cbOp.SelectedIndex = 0;
+
+            btnPrestamo.Enabled = true;
+            btnDevolucion.Enabled = true;
+            dataGridView1.DataSource = Conexion.query("SELECT * FROM EJEMPLAR");
         }
     }
 }

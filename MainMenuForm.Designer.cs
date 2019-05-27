@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEjemplar = new System.Windows.Forms.Button();
             this.btnPeriodico = new System.Windows.Forms.Button();
             this.btnVideo = new System.Windows.Forms.Button();
             this.c = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tbCodigo = new System.Windows.Forms.TextBox();
             this.cbOp = new System.Windows.Forms.ComboBox();
-            this.btnEjemplar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -67,6 +67,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 566);
             this.panel1.TabIndex = 0;
+            // 
+            // btnEjemplar
+            // 
+            this.btnEjemplar.BackColor = System.Drawing.Color.Transparent;
+            this.btnEjemplar.BackgroundImage = global::Proyecto.Properties.Resources.icons8_libros_30;
+            this.btnEjemplar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnEjemplar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEjemplar.FlatAppearance.BorderSize = 0;
+            this.btnEjemplar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
+            this.btnEjemplar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEjemplar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEjemplar.ForeColor = System.Drawing.Color.White;
+            this.btnEjemplar.Location = new System.Drawing.Point(0, 243);
+            this.btnEjemplar.Name = "btnEjemplar";
+            this.btnEjemplar.Size = new System.Drawing.Size(200, 75);
+            this.btnEjemplar.TabIndex = 5;
+            this.btnEjemplar.Text = "Ejemplar";
+            this.btnEjemplar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnEjemplar.UseVisualStyleBackColor = false;
+            this.btnEjemplar.Click += new System.EventHandler(this.BtnEjemplar_Click);
             // 
             // btnPeriodico
             // 
@@ -342,25 +362,6 @@
             this.cbOp.Name = "cbOp";
             this.cbOp.Size = new System.Drawing.Size(121, 25);
             this.cbOp.TabIndex = 4;
-            // 
-            // btnEjemplar
-            // 
-            this.btnEjemplar.BackColor = System.Drawing.Color.Transparent;
-            this.btnEjemplar.BackgroundImage = global::Proyecto.Properties.Resources.icons8_libros_30;
-            this.btnEjemplar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnEjemplar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEjemplar.FlatAppearance.BorderSize = 0;
-            this.btnEjemplar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkCyan;
-            this.btnEjemplar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEjemplar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEjemplar.ForeColor = System.Drawing.Color.White;
-            this.btnEjemplar.Location = new System.Drawing.Point(0, 243);
-            this.btnEjemplar.Name = "btnEjemplar";
-            this.btnEjemplar.Size = new System.Drawing.Size(200, 75);
-            this.btnEjemplar.TabIndex = 5;
-            this.btnEjemplar.Text = "Ejemplar";
-            this.btnEjemplar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnEjemplar.UseVisualStyleBackColor = false;
             // 
             // MainMenuForm
             // 
